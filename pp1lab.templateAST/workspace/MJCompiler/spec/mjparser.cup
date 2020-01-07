@@ -1,0 +1,308 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import java.io.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+
+parser code {:
+	
+	boolean errorDetected = false;
+	
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+    
+    public void report_info(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.info(msg.toString());
+    }
+    
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+
+terminal Integer NUM_CONST;
+terminal Character CHAR_CONST;
+terminal Boolean BOOL_CONST;
+terminal String IDENT;
+terminal ABSTRACT, BREAK, CLASS, CONST, CONTINUE, ELSE, EXTENDS, FOR, IF, NEW;
+terminal PROG, PRINT, READ, RETURN;
+terminal PLUS, MINUS, MULTIPLY, DIVIDE, MOD, EQUAL_EQUAL, NOT_EQUAL, GREATER;
+terminal GREATER_EQUAL, LESS, LESS_EQUAL, AND, OR, EQUAL, PLUS_PLUS, MINUS_MINUS;
+terminal SEMICOLON, COMMA, DOT, LPAREN, RPAREN, LBRACKET, RBRACKET, LBRACE, RBRACE;
+terminal VOID;
+
+nonterminal Program, ProgName;
+nonterminal DeclList, Decl;
+nonterminal ConstDecl, ConstList, Const;
+nonterminal VarDecl, VarList, Var, VarDeclList;
+nonterminal OptionalBrackets, OptionalExtendsType;
+nonterminal ClassDecl, AbstractClassDecl;
+nonterminal OptionalMethodDeclList, MethodDeclList, MethodDecl, MethodReturnType;
+nonterminal OptionalFormPars, FormPars, FormParameter;
+nonterminal Type;
+nonterminal Assignop, Relop, Addop, Mulop;
+nonterminal OptionalBracesMethodDeclList, OptionalBracesMethodAbstractMethodDeclList;
+nonterminal MethodAbstractMethodDeclList, MethodAbstractMethodDecl;
+nonterminal StatementList, AbstractMethodDecl, Statement;
+nonterminal OptionalElseStatement, ElseStatement, OptionalDesignatorStatement;
+nonterminal OptionalCondition, OptionalExpr, OptionalNumConst, DesignatorStatement;
+nonterminal DesignatorAction, OptionalActPars, ActPars, Condition, CondTerm;
+nonterminal CondFact, OptionalRelopExpr, Expr, OptionalMinus, AddopTerms;
+nonterminal Term, MulopFactors, Factor, OptionalParenthesesActPars;
+nonterminal OptionalBracketsExpr, Designator, DesignatorList, DesignatorDotIndex;
+
+precedence left ELSE;
+
+
+
+Program ::= (Program) PROG ProgName DeclList LBRACE MethodDeclList RBRACE;
+ProgName ::= (ProgName) IDENT;
+DeclList ::= (DeclarationList) DeclList Decl  
+		   | (NoDeclarationList) /* epsilon */ 
+			;
+Decl ::= (ConstDeclaration) ConstDecl
+	   | (VarDeclaration) VarDecl
+	   | (ClassDeclaration) ClassDecl
+	   | (AbstractClassDeclaration) AbstractClassDecl
+	   ;
+MethodDeclList ::= (MethodDeclarationList) MethodDeclList MethodDecl
+			  | (NoMethodDeclarationList) /* epsilon */
+			  ;
+
+
+ConstDecl ::= (ConstDecl) CONST Type IDENT EQUAL ConstList SEMICOLON;
+ConstList ::= (ConstsList) ConstList COMMA IDENT EQUAL Const
+			| (ConstSingle) Const
+			;
+Const ::= (NumConst) NUM_CONST
+		| (CharConst) CHAR_CONST
+		| (BoolConst) BOOL_CONST
+		;
+
+
+VarDecl ::= (VarDecl) Type VarList SEMICOLON;
+VarList ::= (VariableList) VarList COMMA Var
+		  | (Variable) Var
+		  ;
+Var ::= (Variab) IDENT OptionalBrackets
+	  | (VarError) error:l {: parser.report_error("Greska pri parsiranju: Neispravna deklaracija promenljive na liniji " + lleft + "!", null); :}
+	  ;
+OptionalBrackets ::= (Brackets) LBRACKET RBRACKET
+				   | (NoBrackets) /* epsilon */
+				   ;
+
+
+ClassDecl ::= (ClassDeclarat) CLASS IDENT OptionalExtendsType LBRACE VarDeclList OptionalBracesMethodDeclList RBRACE
+			/*| (ClassDeclaratError) CLASS IDENT error:l OptionalExtendsType LBRACE VarDeclList OptionalBracesMethodDeclList RBRACE
+				{: parser.report_error("Greska pri parsiranju: Neispravna deklaracija prosirenja natklase na liniji " + lleft + "!", null); :} */
+			;
+OptionalExtendsType ::= (OptExtendsType) EXTENDS Type
+				  | (NoOptExtendsType) /* epsilon */
+				  ;
+VarDeclList ::= (VarDeclarationList) VarDeclList VarDecl
+		   | (NoVarDeclarationList) /* epsilon */
+		   ;
+OptionalBracesMethodDeclList ::= (OptionalBracesMethodDeclarationList) LBRACE MethodDeclList RBRACE
+						 | (NoOptionalBracesMethodDeclarationList) /* epsilon */
+						 ;
+
+
+AbstractClassDecl ::= (AbstractClassDeclarat) ABSTRACT CLASS IDENT OptionalExtendsType LBRACE VarDeclList OptionalBracesMethodAbstractMethodDeclList RBRACE
+					/* | (AbstractClassDeclaratError) error:l OptionalExtendsType LBRACE VarDeclList OptionalBracesMethodAbstractMethodDeclList RBRACE
+						{: parser.report_error("Greska pri parsiranju: Neispravna deklaracija prosirenja natklase na liniji " + lleft + "!", null); :} */
+					;
+OptionalBracesMethodAbstractMethodDeclList ::= (OptionalBracesMethodAbstractMethodDeclarationList) LBRACE MethodAbstractMethodDeclList RBRACE
+											 | (NoOptionalBracesMethodAbstractMethodDeclarationList) /* epsilon */
+											 ;
+MethodAbstractMethodDeclList ::= (MethodAbstractMethodDeclarationList) MethodAbstractMethodDeclList MethodAbstractMethodDecl
+							   | (NoMethodAbstractMethodDeclarationList) /* epsilon */
+							   ;
+MethodAbstractMethodDecl ::= (MethodDeclaration) MethodDecl
+						   | (AbstractMethodDeclar) AbstractMethodDecl
+						   ; 
+
+
+MethodDecl ::= (MethodDecl) MethodReturnType IDENT LPAREN OptionalFormPars RPAREN VarDeclList LBRACE StatementList RBRACE 
+			   ;
+MethodReturnType ::= (MethodRetType) Type
+				   | (VoidMethodRetType) VOID
+				   ;
+OptionalFormPars ::= (OptionalFormParams) FormPars
+				   | (NoOptionalFormParams) /* epsilon */
+				   ;
+StatementList ::= (StmtList) StatementList Statement
+				| (NoStmtList) /* epsilon */
+				;
+				   
+				   
+AbstractMethodDecl ::= (AbstractMethodDeclaration) ABSTRACT MethodReturnType IDENT LPAREN OptionalFormPars RPAREN SEMICOLON
+					 | (AbstractMethodDeclarationError) error SEMICOLON:l {: parser.report_error("Greska pri parsiranju: Neispravna deklaracija metode na liniji " + lleft + "!", null); :}
+					 ;
+
+FormPars ::= (FormParams) FormPars COMMA FormParameter
+		   | (FormParam) FormParameter
+		   ;
+FormParameter ::= (FormalParameter) Type IDENT OptionalBrackets 
+		   		/* | (FormalParamaterError) error:l {: parser.report_error("Greska pri parsiranju: Neispravan formalni parametar na liniji " + lleft + "!", null); :} */
+		   		;
+
+
+Type ::= (Type) IDENT;
+
+
+Statement ::= (DesignatorStmt) DesignatorStatement SEMICOLON
+			| (IfStmt) IF LPAREN Condition RPAREN Statement OptionalElseStatement
+			| (ForStmt) FOR LPAREN OptionalDesignatorStatement SEMICOLON OptionalCondition SEMICOLON OptionalDesignatorStatement RPAREN Statement
+			| (BreakStmt) BREAK SEMICOLON
+			| (ContinueStmt) CONTINUE SEMICOLON
+			| (ReturnStmt) RETURN OptionalExpr SEMICOLON
+			| (ReadStmt) READ LPAREN Designator RPAREN SEMICOLON
+			| (PrintStmt) PRINT LPAREN Expr OptionalNumConst RPAREN SEMICOLON
+			| (NestedStmt) LBRACE StatementList RBRACE
+			;
+OptionalElseStatement ::= (OptionalElseStmt) ElseStatement
+						| (NoOptionalElseStmt) /* epsilon */
+						;
+ElseStatement ::= (ElseStatement) ELSE Statement;
+OptionalDesignatorStatement ::= (OptionalDesigStatement) DesignatorStatement
+							  | (NoOptionalDesigStatement) /* epsilon */
+							  ;
+OptionalCondition ::= (OptionalCond) Condition
+					| (NoOptionalCond) /* epsilon */
+					| (ConditionError) error:l {: parser.report_error("Greska pri parsiranju: Neispravan logicki izraz u for petlji na liniji " + lleft + "!", null); :}
+					;
+OptionalExpr ::= (OptionalExpression) Expr
+			   | (NoOptionalExpression) /* epsilon */
+			   ;
+OptionalNumConst ::= (OptionalNumberConst) NUM_CONST
+				   | (NoOptionalNumberConst) /* epsilon */
+				   ;
+
+
+DesignatorStatement ::= (DesignatorStatement) Designator DesignatorAction;
+DesignatorAction ::= (DesignatorActionAssign) Assignop Expr
+				   | (DesignatorActionCallMethod) LPAREN OptionalActPars RPAREN
+				   | (DesignatorActionPlusPlus) PLUS_PLUS
+				   | (DesignatorActionMinusMinus) MINUS_MINUS
+				   | (DesignatorActionError) error:l {: parser.report_error("Greska pri parsiranju: Neispravan iskaz dodele na liniji " + lleft + "!", null); :}
+				   ;
+OptionalActPars ::= (OptionalActualParams) ActPars
+				  | (NoOptionalActualParams) /* epsilon */
+				  ;
+
+
+ActPars ::= (ActParams) ActPars COMMA Expr
+		  | (ActParam) Expr
+		  ;
+
+
+Condition ::= (ConditionList) Condition OR CondTerm
+			| (ConditionSingle) CondTerm
+			;
+			
+			
+CondTerm ::= (CondTermList) CondTerm AND CondFact
+		   | (CondTermSingle) CondFact
+		   ;
+			
+			
+CondFact ::= (CondFact) Expr OptionalRelopExpr;
+OptionalRelopExpr ::= (OptionalRelopExpression) Relop Expr
+					| (NoOptionalRelopExpression) /* epsilon */
+					;
+
+
+Expr ::= (Expr) OptionalMinus Term AddopTerms;
+OptionalMinus ::= (OptMinus) MINUS
+				| (NoOptMinus) /* epsilon */
+				;
+AddopTerms ::= (AddopTerminals) AddopTerms Addop Term
+			 | (NoAddopTerminals) /* epsilon */
+			 ;
+
+
+Term ::= (Term) Factor MulopFactors;
+MulopFactors ::= (MultiplyopFactors) MulopFactors Mulop Factor
+			   | (NoMultiplyopFactors) /* epsilon */
+			   ;
+
+
+Factor ::= (FactorDesignator) Designator OptionalParenthesesActPars
+		 | (FactorNumConst) NUM_CONST
+		 | (FactorCharConst) CHAR_CONST
+		 | (FactorBoolConst) BOOL_CONST
+		 | (FactorNew) NEW Type OptionalBracketsExpr
+		 | (FactorExpr) LPAREN Expr RPAREN
+		 ;
+OptionalParenthesesActPars ::= (OptionalParenthesesActualPars) LPAREN OptionalActPars RPAREN
+							 | (NoOptionalParenthesesActualPars) /* epsilon */
+							 ;
+OptionalBracketsExpr ::= (OptionalBracketsExpression) LBRACKET Expr RBRACKET
+					   | (NoOptionalBracketsExpression) /* epsilon */
+					   ;
+							 
+
+Designator ::= (Designator) IDENT DesignatorList;
+DesignatorList ::= (DesigList) DesignatorList DesignatorDotIndex
+				 | (NoDesigList) /*  epsilon */
+				 ;
+DesignatorDotIndex ::= (DesignatorDot) DOT IDENT
+					 | (DesignatorIndex) LBRACKET Expr RBRACKET
+					 ;
+
+
+Assignop ::= (Assignop) EQUAL;
+
+
+Relop ::= (RelopEqualEqual) EQUAL_EQUAL
+		| (RelopNotEqual) NOT_EQUAL
+		| (RelopGreater) GREATER
+		| (RelopGreaterEqual) GREATER_EQUAL
+		| (RelopLess) LESS
+		| (RelopLessEqual) LESS_EQUAL
+		;
+
+
+Addop ::= (AddopPlus) PLUS
+		| (AddopMinus) MINUS
+		;
+
+
+Mulop ::= (MulopMultiply) MULTIPLY
+		| (MulopDivide) DIVIDE
+		| (MulopMod) MOD
+		;

@@ -1,0 +1,210 @@
+INFO  00:53:38,219 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\kratak_program.mj
+INFO  00:53:38,244 - #16 program
+INFO  00:53:38,249 - #5 MJProgram
+INFO  00:53:38,249 - #5 int
+INFO  00:53:38,249 - #5 x
+INFO  00:53:38,249 - #36 ;
+INFO  00:53:38,249 - #5 int
+INFO  00:53:38,249 - #5 y
+INFO  00:53:38,249 - #36 ;
+INFO  00:53:38,249 - #9 const
+INFO  00:53:38,249 - #5 char
+INFO  00:53:38,249 - #5 c
+INFO  00:53:38,249 - #33 =
+INFO  00:53:38,249 - #3 a
+INFO  00:53:38,249 - #36 ;
+INFO  00:53:38,249 - #8 class
+INFO  00:53:38,249 - #5 Klasa
+INFO  00:53:38,249 - #5 asd
+ERROR 00:53:38,249 - 
+Sintaksna greska na liniji 3
+INFO  00:53:38,249 - #12 extends
+INFO  00:53:38,249 - #5 F
+INFO  00:53:38,249 - #43 {
+INFO  00:53:38,249 - #43 {
+INFO  00:53:38,249 - #5 int
+INFO  00:53:38,249 - #5 a
+ERROR 00:53:38,249 - Greska pri parsiranju: Neispravna deklaracija prosirenja natklase na liniji 3!
+INFO  00:53:38,254 - #39 (
+INFO  00:53:38,254 - #40 )
+INFO  00:53:38,254 - #43 {
+INFO  00:53:38,254 - #44 }
+INFO  00:53:38,254 - #44 }
+INFO  00:53:38,254 - #44 }
+INFO  00:53:38,254 - #43 {
+INFO  00:53:38,254 - #5 int
+INFO  00:53:38,254 - #5 main
+INFO  00:53:38,254 - #39 (
+INFO  00:53:38,254 - #40 )
+INFO  00:53:38,254 - #5 char
+INFO  00:53:38,254 - #2 2
+ERROR 00:53:38,254 - 
+Sintaksna greska na liniji 12
+INFO  00:53:38,254 - #36 ;
+INFO  00:53:38,254 - #43 {
+INFO  00:53:38,254 - #5 y
+INFO  00:53:38,254 - #33 =
+ERROR 00:53:38,254 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 12!
+INFO  00:53:38,254 - #5 metoda
+INFO  00:53:38,254 - #39 (
+INFO  00:53:38,254 - #33 =
+ERROR 00:53:38,254 - 
+Sintaksna greska na liniji 14
+INFO  00:53:38,254 - #40 )
+INFO  00:53:38,254 - #36 ;
+INFO  00:53:38,254 - #13 for
+INFO  00:53:38,254 - #39 (
+INFO  00:53:38,254 - #36 ;
+ERROR 00:53:38,254 - Greska pri parsiranju: Neispravan iskaz dodele na liniji 14!
+INFO  00:53:38,259 - #33 =
+ERROR 00:53:38,259 - 
+Sintaksna greska na liniji 15
+INFO  00:53:38,259 - #36 ;
+INFO  00:53:38,259 - #40 )
+INFO  00:53:38,259 - #43 {
+INFO  00:53:38,259 - #44 }
+ERROR 00:53:38,259 - Greska pri parsiranju: Neispravan logicki izraz u for petlji na liniji 15!
+INFO  00:53:38,259 - #44 }
+INFO  00:53:38,259 - #44 }
+INFO  00:53:38,259 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationList(
+    DeclarationList(
+      DeclarationList(
+        DeclarationList(
+          NoDeclarationList(
+          ) [NoDeclarationList]
+          VarDeclaration(
+            VarDecl(
+              Type(
+               int
+              ) [Type]
+              Variable(
+                Variab(
+                 x
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [Variab]
+              ) [Variable]
+            ) [VarDecl]
+          ) [VarDeclaration]
+        ) [DeclarationList]
+        VarDeclaration(
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            Variable(
+              Variab(
+               y
+                NoBrackets(
+                ) [NoBrackets]
+              ) [Variab]
+            ) [Variable]
+          ) [VarDecl]
+        ) [VarDeclaration]
+      ) [DeclarationList]
+      ConstDeclaration(
+        ConstDecl(
+          Type(
+           char
+          ) [Type]
+         c
+          ConstSingle(
+            CharConst(
+             a
+            ) [CharConst]
+          ) [ConstSingle]
+        ) [ConstDecl]
+      ) [ConstDeclaration]
+    ) [DeclarationList]
+    ClassDeclaration(
+      ClassDeclarat(
+       Klasa
+        OptExtendsErrorParen(
+        ) [OptExtendsErrorParen]
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        OptionalBracesMethodDeclarationList(
+          MethodDeclarationList(
+            NoMethodDeclarationList(
+            ) [NoMethodDeclarationList]
+            MethodDecl(
+              MethodRetType(
+                Type(
+                 int
+                ) [Type]
+              ) [MethodRetType]
+             a
+              NoOptionalFormParams(
+              ) [NoOptionalFormParams]
+              NoVarDeclarationList(
+              ) [NoVarDeclarationList]
+              NoStmtList(
+              ) [NoStmtList]
+            ) [MethodDecl]
+          ) [MethodDeclarationList]
+        ) [OptionalBracesMethodDeclarationList]
+      ) [ClassDeclarat]
+    ) [ClassDeclaration]
+  ) [DeclarationList]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodRetType(
+        Type(
+         int
+        ) [Type]
+      ) [MethodRetType]
+     main
+      NoOptionalFormParams(
+      ) [NoOptionalFormParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          Variable(
+            VarError(
+            ) [VarError]
+          ) [Variable]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StmtList(
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          DesignatorStmt(
+            DesignatorStatement(
+              Designator(
+               y
+                NoDesigList(
+                ) [NoDesigList]
+              ) [Designator]
+              DesignatorActionError(
+              ) [DesignatorActionError]
+            ) [DesignatorStatement]
+          ) [DesignatorStmt]
+        ) [StmtList]
+        ForStmt(
+          NoOptionalDesigStatement(
+          ) [NoOptionalDesigStatement]
+          ConditionError(
+          ) [ConditionError]
+          NoOptionalDesigStatement(
+          ) [NoOptionalDesigStatement]
+          NestedStmt(
+            NoStmtList(
+            ) [NoStmtList]
+          ) [NestedStmt]
+        ) [ForStmt]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  00:53:38,259 - ===================================

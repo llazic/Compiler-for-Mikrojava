@@ -1,0 +1,38 @@
+program MJProgram
+	int x; int y; const char c = 'a';
+	abstract class ApstraktnaKlasa{
+		{
+			abstract void metoda();
+		}
+	}
+	class Klasa extends Object {
+		bool t;
+		char a[];
+		{
+			int x(ApstraktnaKlasa ak) {
+				ak.x[2] = 3;
+			}
+		}
+	}
+{	
+	int k()
+		int c; 
+	{
+		c = 1;
+		return c+2;
+	}
+	
+	int main() {
+		y = 2;
+		x = y + 2;
+		y = k() + 3;
+		print(y);
+		for (i = 0; i < 5; i++) {
+			if (i == 3) 
+				if (i == 4) 
+				x = 2;
+				else x = 3;
+		}
+		return 0;
+	}
+}

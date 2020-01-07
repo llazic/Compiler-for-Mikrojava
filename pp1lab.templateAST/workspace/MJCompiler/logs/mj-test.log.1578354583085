@@ -1,0 +1,65 @@
+INFO  00:49:33,652 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\kratak_program.mj
+INFO  00:49:33,680 - #16 program
+INFO  00:49:33,680 - #5 MJProgram
+INFO  00:49:33,680 - #5 int
+INFO  00:49:33,681 - #5 x
+INFO  00:49:33,682 - #36 ;
+INFO  00:49:33,682 - #5 int
+INFO  00:49:33,683 - #5 y
+INFO  00:49:33,683 - #36 ;
+INFO  00:49:33,683 - #9 const
+INFO  00:49:33,683 - #5 char
+INFO  00:49:33,683 - #5 c
+INFO  00:49:33,683 - #33 =
+INFO  00:49:33,683 - #3 a
+INFO  00:49:33,683 - #36 ;
+INFO  00:49:33,683 - #8 class
+INFO  00:49:33,684 - #5 Klasa
+INFO  00:49:33,684 - #12 extends
+INFO  00:49:33,684 - #43 {
+ERROR 00:49:33,684 - 
+Sintaksna greska na liniji 3
+INFO  00:49:33,684 - #43 {
+INFO  00:49:33,684 - #5 int
+INFO  00:49:33,684 - #5 a
+ERROR 00:49:33,685 - Greska pri parsiranju: Neispravna deklaracija prosirenja natklase na liniji 3!
+INFO  00:49:33,686 - #39 (
+INFO  00:49:33,686 - #40 )
+INFO  00:49:33,686 - #36 ;
+ERROR 00:49:33,686 - 
+Sintaksna greska na liniji 5
+INFO  00:49:33,687 - #44 }
+INFO  00:49:33,687 - #44 }
+INFO  00:49:33,687 - #43 {
+INFO  00:49:33,687 - #5 int
+INFO  00:49:33,687 - #5 main
+INFO  00:49:33,687 - #39 (
+ERROR 00:49:33,687 - Greska pri parsiranju: Neispravna deklaracija prosirenja natklase na liniji 3!
+ERROR 00:49:33,687 - 
+Sintaksna greska na liniji 9
+INFO  00:49:33,687 - #40 )
+INFO  00:49:33,687 - #5 char
+INFO  00:49:33,687 - #2 2
+INFO  00:49:33,687 - #36 ;
+INFO  00:49:33,688 - #43 {
+INFO  00:49:33,688 - #5 y
+INFO  00:49:33,688 - #33 =
+ERROR 00:49:33,688 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 9!
+ERROR 00:49:33,689 - 
+Sintaksna greska na liniji 14
+INFO  00:49:33,689 - #5 metoda
+INFO  00:49:33,689 - #39 (
+INFO  00:49:33,689 - #33 =
+INFO  00:49:33,689 - #40 )
+INFO  00:49:33,689 - #36 ;
+INFO  00:49:33,689 - #13 for
+INFO  00:49:33,689 - #39 (
+INFO  00:49:33,689 - #36 ;
+INFO  00:49:33,689 - #33 =
+INFO  00:49:33,689 - #36 ;
+INFO  00:49:33,689 - #40 )
+INFO  00:49:33,689 - #43 {
+INFO  00:49:33,690 - #44 }
+INFO  00:49:33,690 - #44 }
+INFO  00:49:33,690 - #44 }
+ERROR 00:49:33,692 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 17

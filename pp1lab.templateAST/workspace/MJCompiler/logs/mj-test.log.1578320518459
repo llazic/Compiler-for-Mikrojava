@@ -1,0 +1,172 @@
+INFO  15:20:42,334 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\kratak_program.mj
+INFO  15:20:42,359 - #16 program
+INFO  15:20:42,359 - #5 MJProgram
+INFO  15:20:42,359 - #5 int
+INFO  15:20:42,364 - #2 2
+ERROR 15:20:42,364 - 
+Sintaksna greska na liniji 2
+INFO  15:20:42,364 - #37 ,
+INFO  15:20:42,364 - #5 x
+INFO  15:20:42,364 - #36 ;
+INFO  15:20:42,364 - #5 int
+ERROR 15:20:42,364 - Neispravna deklaracija promenljive na liniji 2!
+INFO  15:20:42,364 - #5 y
+INFO  15:20:42,364 - #36 ;
+INFO  15:20:42,364 - #9 const
+INFO  15:20:42,364 - #5 char
+INFO  15:20:42,364 - #5 c
+INFO  15:20:42,364 - #33 =
+INFO  15:20:42,364 - #3 a
+INFO  15:20:42,364 - #36 ;
+INFO  15:20:42,364 - #43 {
+INFO  15:20:42,364 - #5 int
+INFO  15:20:42,364 - #5 main
+INFO  15:20:42,364 - #39 (
+INFO  15:20:42,364 - #40 )
+INFO  15:20:42,364 - #5 char
+INFO  15:20:42,369 - #5 c
+INFO  15:20:42,369 - #37 ,
+INFO  15:20:42,369 - #33 =
+ERROR 15:20:42,369 - 
+Sintaksna greska na liniji 5
+INFO  15:20:42,369 - #37 ,
+INFO  15:20:42,369 - #5 d
+INFO  15:20:42,369 - #36 ;
+INFO  15:20:42,369 - #43 {
+ERROR 15:20:42,369 - Neispravna deklaracija promenljive na liniji 5!
+INFO  15:20:42,369 - #5 y
+INFO  15:20:42,369 - #33 =
+INFO  15:20:42,369 - #2 2
+INFO  15:20:42,369 - #36 ;
+INFO  15:20:42,369 - #44 }
+INFO  15:20:42,369 - #44 }
+INFO  15:20:42,369 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationList(
+    DeclarationList(
+      DeclarationList(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        VarDeclaration(
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VariableList(
+              Variable(
+                VarDerived1(
+                ) [VarDerived1]
+              ) [Variable]
+              Variab(
+               x
+                NoBrackets(
+                ) [NoBrackets]
+              ) [Variab]
+            ) [VariableList]
+          ) [VarDecl]
+        ) [VarDeclaration]
+      ) [DeclarationList]
+      VarDeclaration(
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          Variable(
+            Variab(
+             y
+              NoBrackets(
+              ) [NoBrackets]
+            ) [Variab]
+          ) [Variable]
+        ) [VarDecl]
+      ) [VarDeclaration]
+    ) [DeclarationList]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+         char
+        ) [Type]
+       c
+        ConstSingle(
+          CharConst(
+           a
+          ) [CharConst]
+        ) [ConstSingle]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [DeclarationList]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodRetType(
+        Type(
+         int
+        ) [Type]
+      ) [MethodRetType]
+     main
+      NoOptionalFormParams(
+      ) [NoOptionalFormParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          VariableList(
+            VariableList(
+              Variable(
+                Variab(
+                 c
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [Variab]
+              ) [Variable]
+              VarDerived1(
+              ) [VarDerived1]
+            ) [VariableList]
+            Variab(
+             d
+              NoBrackets(
+              ) [NoBrackets]
+            ) [Variab]
+          ) [VariableList]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        DesignatorStmt(
+          DesignatorStatement(
+            Designator(
+             y
+              NoDesigList(
+              ) [NoDesigList]
+            ) [Designator]
+            DesignatorActionAssign(
+              Assignop(
+              ) [Assignop]
+              Expr(
+                NoOptMinus(
+                ) [NoOptMinus]
+                Term(
+                  FactorNumConst(
+                   2
+                  ) [FactorNumConst]
+                  NoMultiplyopFactors(
+                  ) [NoMultiplyopFactors]
+                ) [Term]
+                NoAddopTerminals(
+                ) [NoAddopTerminals]
+              ) [Expr]
+            ) [DesignatorActionAssign]
+          ) [DesignatorStatement]
+        ) [DesignatorStmt]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  15:20:42,374 - ===================================

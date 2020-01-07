@@ -1,0 +1,37 @@
+INFO  00:07:13,985 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\kratak_program.mj
+INFO  00:07:14,012 - #16 program
+INFO  00:07:14,013 - #5 MJProgram
+INFO  00:07:14,013 - #5 int
+INFO  00:07:14,013 - #5 x
+INFO  00:07:14,014 - #36 ;
+INFO  00:07:14,014 - #5 int
+INFO  00:07:14,015 - #5 y
+INFO  00:07:14,015 - #36 ;
+INFO  00:07:14,015 - #9 const
+INFO  00:07:14,015 - #5 char
+INFO  00:07:14,015 - #5 c
+INFO  00:07:14,015 - #33 =
+INFO  00:07:14,015 - #3 a
+INFO  00:07:14,015 - #36 ;
+INFO  00:07:14,015 - #43 {
+INFO  00:07:14,016 - #5 int
+INFO  00:07:14,016 - #5 main
+INFO  00:07:14,016 - #39 (
+INFO  00:07:14,016 - #5 int
+INFO  00:07:14,016 - #40 )
+ERROR 00:07:14,017 - 
+Sintaksna greska na liniji 4
+INFO  00:07:14,017 - #5 char
+INFO  00:07:14,017 - #2 2
+INFO  00:07:14,017 - #36 ;
+INFO  00:07:14,017 - #43 {
+INFO  00:07:14,017 - #5 y
+INFO  00:07:14,017 - #33 =
+INFO  00:07:14,017 - #5 metoda
+INFO  00:07:14,017 - #39 (
+INFO  00:07:14,017 - #33 =
+INFO  00:07:14,017 - #40 )
+INFO  00:07:14,018 - #36 ;
+INFO  00:07:14,018 - #44 }
+INFO  00:07:14,018 - #44 }
+ERROR 00:07:14,018 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 9

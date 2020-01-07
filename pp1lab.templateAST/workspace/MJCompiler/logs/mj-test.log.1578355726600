@@ -1,0 +1,33 @@
+INFO  01:08:13,487 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\kratak_program.mj
+INFO  01:08:13,517 - #16 program
+INFO  01:08:13,517 - #5 MJProgram
+INFO  01:08:13,517 - #5 int
+INFO  01:08:13,517 - #5 x
+INFO  01:08:13,517 - #36 ;
+INFO  01:08:13,517 - #5 int
+INFO  01:08:13,517 - #5 y
+INFO  01:08:13,517 - #36 ;
+INFO  01:08:13,517 - #9 const
+INFO  01:08:13,517 - #5 char
+INFO  01:08:13,517 - #5 c
+INFO  01:08:13,517 - #33 =
+INFO  01:08:13,517 - #3 a
+INFO  01:08:13,517 - #36 ;
+INFO  01:08:13,517 - #8 class
+INFO  01:08:13,517 - #5 Klasa
+INFO  01:08:13,517 - #5 asd
+ERROR 01:08:13,517 - 
+Sintaksna greska na liniji 3
+INFO  01:08:13,517 - #12 extends
+INFO  01:08:13,517 - #5 F
+INFO  01:08:13,517 - #43 {
+INFO  01:08:13,517 - #43 {
+INFO  01:08:13,522 - #5 int
+INFO  01:08:13,522 - #5 a
+INFO  01:08:13,522 - #39 (
+INFO  01:08:13,522 - #40 )
+INFO  01:08:13,522 - #43 {
+INFO  01:08:13,522 - #44 }
+INFO  01:08:13,522 - #44 }
+INFO  01:08:13,522 - #44 }
+INFO  01:08:13,522 - #43 {

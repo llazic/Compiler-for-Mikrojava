@@ -1,0 +1,137 @@
+INFO  15:17:41,712 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\kratak_program.mj
+INFO  15:17:41,737 - #16 program
+INFO  15:17:41,737 - #5 MJProgram
+INFO  15:17:41,737 - #5 int
+INFO  15:17:41,737 - #5 x
+INFO  15:17:41,737 - #37 ,
+INFO  15:17:41,742 - #2 2
+ERROR 15:17:41,742 - 
+Sintaksna greska na liniji 4
+INFO  15:17:41,742 - #36 ;
+INFO  15:17:41,742 - #5 int
+INFO  15:17:41,742 - #5 y
+INFO  15:17:41,742 - #36 ;
+ERROR 15:17:41,742 - Neispravna deklaracija promenljive!
+INFO  15:17:41,742 - #9 const
+INFO  15:17:41,742 - #5 char
+INFO  15:17:41,742 - #5 c
+INFO  15:17:41,742 - #33 =
+INFO  15:17:41,742 - #3 a
+INFO  15:17:41,742 - #36 ;
+INFO  15:17:41,742 - #43 {
+INFO  15:17:41,742 - #5 int
+INFO  15:17:41,742 - #5 main
+INFO  15:17:41,742 - #39 (
+INFO  15:17:41,742 - #40 )
+INFO  15:17:41,742 - #43 {
+INFO  15:17:41,742 - #5 y
+INFO  15:17:41,742 - #33 =
+INFO  15:17:41,747 - #2 2
+INFO  15:17:41,747 - #36 ;
+INFO  15:17:41,747 - #44 }
+INFO  15:17:41,747 - #44 }
+INFO  15:17:41,747 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationList(
+    DeclarationList(
+      DeclarationList(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        VarDeclaration(
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VariableList(
+              Variable(
+                Variab(
+                 x
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [Variab]
+              ) [Variable]
+              VarDerived1(
+              ) [VarDerived1]
+            ) [VariableList]
+          ) [VarDecl]
+        ) [VarDeclaration]
+      ) [DeclarationList]
+      VarDeclaration(
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          Variable(
+            Variab(
+             y
+              NoBrackets(
+              ) [NoBrackets]
+            ) [Variab]
+          ) [Variable]
+        ) [VarDecl]
+      ) [VarDeclaration]
+    ) [DeclarationList]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+         char
+        ) [Type]
+       c
+        ConstSingle(
+          CharConst(
+           a
+          ) [CharConst]
+        ) [ConstSingle]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [DeclarationList]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodRetType(
+        Type(
+         int
+        ) [Type]
+      ) [MethodRetType]
+     main
+      NoOptionalFormParams(
+      ) [NoOptionalFormParams]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        DesignatorStmt(
+          DesignatorStatement(
+            Designator(
+             y
+              NoDesigList(
+              ) [NoDesigList]
+            ) [Designator]
+            DesignatorActionAssign(
+              Assignop(
+              ) [Assignop]
+              Expr(
+                NoOptMinus(
+                ) [NoOptMinus]
+                Term(
+                  FactorNumConst(
+                   2
+                  ) [FactorNumConst]
+                  NoMultiplyopFactors(
+                  ) [NoMultiplyopFactors]
+                ) [Term]
+                NoAddopTerminals(
+                ) [NoAddopTerminals]
+              ) [Expr]
+            ) [DesignatorActionAssign]
+          ) [DesignatorStatement]
+        ) [DesignatorStmt]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  15:17:41,747 - ===================================

@@ -1,0 +1,23 @@
+INFO  13:41:33,921 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\test303.mj
+INFO  13:41:33,946 - #16 program
+INFO  13:41:33,946 - #5 test_303
+INFO  13:41:33,946 - #9 const
+INFO  13:41:33,946 - #5 int
+INFO  13:41:33,946 - #5 cinilac
+INFO  13:41:33,946 - #33 =
+INFO  13:41:33,946 - #2 4
+INFO  13:41:33,946 - #37 ,
+INFO  13:41:33,946 - #5 delilac
+INFO  13:41:33,946 - #33 =
+INFO  13:41:33,946 - #2 3
+INFO  13:41:33,946 - #36 ;
+INFO  13:41:33,946 - #6 abstract
+INFO  13:41:33,946 - #8 class
+INFO  13:41:33,946 - #5 AbsPredmet
+INFO  13:41:33,946 - #43 {
+INFO  13:41:33,946 - #5 int
+INFO  13:41:33,946 - #5 zapremina
+INFO  13:41:33,946 - #39 (
+ERROR 13:41:33,946 - 
+Sintaksna greska na liniji 8
+ERROR 13:41:33,951 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 8

@@ -1,0 +1,161 @@
+INFO  00:16:16,370 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\kratak_program.mj
+INFO  00:16:16,395 - #16 program
+INFO  00:16:16,395 - #5 MJProgram
+INFO  00:16:16,395 - #5 int
+INFO  00:16:16,395 - #5 x
+INFO  00:16:16,395 - #36 ;
+INFO  00:16:16,400 - #5 int
+INFO  00:16:16,400 - #5 y
+INFO  00:16:16,400 - #36 ;
+INFO  00:16:16,400 - #9 const
+INFO  00:16:16,400 - #5 char
+INFO  00:16:16,400 - #5 c
+INFO  00:16:16,400 - #33 =
+INFO  00:16:16,400 - #3 a
+INFO  00:16:16,400 - #36 ;
+INFO  00:16:16,400 - #43 {
+INFO  00:16:16,400 - #5 int
+INFO  00:16:16,400 - #5 main
+INFO  00:16:16,400 - #39 (
+INFO  00:16:16,400 - #40 )
+INFO  00:16:16,400 - #5 char
+INFO  00:16:16,400 - #2 2
+ERROR 00:16:16,400 - 
+Sintaksna greska na liniji 7
+INFO  00:16:16,400 - #36 ;
+INFO  00:16:16,400 - #43 {
+INFO  00:16:16,400 - #5 y
+INFO  00:16:16,400 - #33 =
+ERROR 00:16:16,400 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 7!
+INFO  00:16:16,405 - #5 metoda
+INFO  00:16:16,405 - #39 (
+INFO  00:16:16,405 - #33 =
+ERROR 00:16:16,405 - 
+Sintaksna greska na liniji 9
+INFO  00:16:16,405 - #40 )
+INFO  00:16:16,405 - #36 ;
+INFO  00:16:16,405 - #13 for
+INFO  00:16:16,405 - #39 (
+INFO  00:16:16,405 - #36 ;
+ERROR 00:16:16,405 - Greska pri parsiranju: Neispravan iskaz dodele na liniji 9!
+INFO  00:16:16,405 - #33 =
+ERROR 00:16:16,405 - 
+Sintaksna greska na liniji 10
+INFO  00:16:16,405 - #36 ;
+INFO  00:16:16,405 - #40 )
+INFO  00:16:16,405 - #43 {
+INFO  00:16:16,405 - #44 }
+ERROR 00:16:16,405 - Greska pri parsiranju: Neispravan izraz u for petlji na liniji 10!
+INFO  00:16:16,405 - #44 }
+INFO  00:16:16,405 - #44 }
+INFO  00:16:16,405 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationList(
+    DeclarationList(
+      DeclarationList(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        VarDeclaration(
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            Variable(
+              Variab(
+               x
+                NoBrackets(
+                ) [NoBrackets]
+              ) [Variab]
+            ) [Variable]
+          ) [VarDecl]
+        ) [VarDeclaration]
+      ) [DeclarationList]
+      VarDeclaration(
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          Variable(
+            Variab(
+             y
+              NoBrackets(
+              ) [NoBrackets]
+            ) [Variab]
+          ) [Variable]
+        ) [VarDecl]
+      ) [VarDeclaration]
+    ) [DeclarationList]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+         char
+        ) [Type]
+       c
+        ConstSingle(
+          CharConst(
+           a
+          ) [CharConst]
+        ) [ConstSingle]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [DeclarationList]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodRetType(
+        Type(
+         int
+        ) [Type]
+      ) [MethodRetType]
+     main
+      NoOptionalFormParams(
+      ) [NoOptionalFormParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          Variable(
+            VarError(
+            ) [VarError]
+          ) [Variable]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StmtList(
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          DesignatorStmt(
+            DesignatorStatement(
+              Designator(
+               y
+                NoDesigList(
+                ) [NoDesigList]
+              ) [Designator]
+              DesignatorActionError(
+              ) [DesignatorActionError]
+            ) [DesignatorStatement]
+          ) [DesignatorStmt]
+        ) [StmtList]
+        ForStmt(
+          NoOptionalDesigStatement(
+          ) [NoOptionalDesigStatement]
+          ConditionError(
+          ) [ConditionError]
+          NoOptionalDesigStatement(
+          ) [NoOptionalDesigStatement]
+          NestedStmt(
+            NoStmtList(
+            ) [NoStmtList]
+          ) [NestedStmt]
+        ) [ForStmt]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  00:16:16,410 - ===================================

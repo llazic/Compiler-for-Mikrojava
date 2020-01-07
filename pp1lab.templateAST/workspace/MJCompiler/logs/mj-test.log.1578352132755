@@ -1,0 +1,158 @@
+INFO  00:08:37,306 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\kratak_program.mj
+INFO  00:08:37,334 - #16 program
+INFO  00:08:37,334 - #5 MJProgram
+INFO  00:08:37,334 - #5 int
+INFO  00:08:37,334 - #5 x
+INFO  00:08:37,335 - #36 ;
+INFO  00:08:37,335 - #5 int
+INFO  00:08:37,336 - #5 y
+INFO  00:08:37,336 - #36 ;
+INFO  00:08:37,336 - #9 const
+INFO  00:08:37,336 - #5 char
+INFO  00:08:37,336 - #5 c
+INFO  00:08:37,336 - #33 =
+INFO  00:08:37,336 - #3 a
+INFO  00:08:37,336 - #36 ;
+INFO  00:08:37,337 - #43 {
+INFO  00:08:37,337 - #5 int
+INFO  00:08:37,337 - #5 main
+INFO  00:08:37,338 - #39 (
+INFO  00:08:37,338 - #5 aa
+INFO  00:08:37,338 - #33 =
+ERROR 00:08:37,338 - 
+Sintaksna greska na liniji 4
+INFO  00:08:37,338 - #37 ,
+INFO  00:08:37,338 - #5 int
+INFO  00:08:37,338 - #5 s
+INFO  00:08:37,339 - #40 )
+ERROR 00:08:37,339 - Greska pri parsiranju: Neispravan formalni parametar na liniji 4!
+INFO  00:08:37,339 - #5 char
+INFO  00:08:37,340 - #2 2
+ERROR 00:08:37,340 - 
+Sintaksna greska na liniji 5
+INFO  00:08:37,340 - #36 ;
+INFO  00:08:37,340 - #43 {
+INFO  00:08:37,340 - #5 y
+INFO  00:08:37,340 - #33 =
+ERROR 00:08:37,340 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 5!
+INFO  00:08:37,341 - #5 metoda
+INFO  00:08:37,342 - #39 (
+INFO  00:08:37,342 - #33 =
+ERROR 00:08:37,342 - 
+Sintaksna greska na liniji 7
+INFO  00:08:37,342 - #40 )
+INFO  00:08:37,342 - #36 ;
+INFO  00:08:37,342 - #44 }
+INFO  00:08:37,342 - #44 }
+ERROR 00:08:37,342 - Greska pri parsiranju: Neispravan iskaz dodele na liniji 7!
+INFO  00:08:37,344 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationList(
+    DeclarationList(
+      DeclarationList(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        VarDeclaration(
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            Variable(
+              Variab(
+               x
+                NoBrackets(
+                ) [NoBrackets]
+              ) [Variab]
+            ) [Variable]
+          ) [VarDecl]
+        ) [VarDeclaration]
+      ) [DeclarationList]
+      VarDeclaration(
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          Variable(
+            Variab(
+             y
+              NoBrackets(
+              ) [NoBrackets]
+            ) [Variab]
+          ) [Variable]
+        ) [VarDecl]
+      ) [VarDeclaration]
+    ) [DeclarationList]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+         char
+        ) [Type]
+       c
+        ConstSingle(
+          CharConst(
+           a
+          ) [CharConst]
+        ) [ConstSingle]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [DeclarationList]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodRetType(
+        Type(
+         int
+        ) [Type]
+      ) [MethodRetType]
+     main
+      OptionalFormParams(
+        FormParams(
+          FormParam(
+            FormalParamaterError(
+            ) [FormalParamaterError]
+          ) [FormParam]
+          FormalParameter(
+            Type(
+             int
+            ) [Type]
+           s
+            NoBrackets(
+            ) [NoBrackets]
+          ) [FormalParameter]
+        ) [FormParams]
+      ) [OptionalFormParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          Variable(
+            VarError(
+            ) [VarError]
+          ) [Variable]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        DesignatorStmt(
+          DesignatorStatement(
+            Designator(
+             y
+              NoDesigList(
+              ) [NoDesigList]
+            ) [Designator]
+            DesignatorActionError(
+            ) [DesignatorActionError]
+          ) [DesignatorStatement]
+        ) [DesignatorStmt]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  00:08:37,344 - ===================================

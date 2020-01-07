@@ -1,0 +1,150 @@
+INFO  23:26:43,872 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\kratak_program.mj
+INFO  23:26:44,252 - #16 program
+INFO  23:26:44,252 - #5 MJProgram
+INFO  23:26:44,253 - #5 int
+INFO  23:26:44,258 - #2 2
+ERROR 23:26:44,262 - 
+Sintaksna greska na liniji 2
+INFO  23:26:44,262 - #37 ,
+INFO  23:26:44,262 - #5 x
+INFO  23:26:44,262 - #36 ;
+INFO  23:26:44,263 - #5 int
+ERROR 23:26:44,263 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 2!
+INFO  23:26:44,273 - #5 y
+INFO  23:26:44,274 - #36 ;
+INFO  23:26:44,274 - #9 const
+INFO  23:26:44,274 - #5 char
+INFO  23:26:44,274 - #5 c
+INFO  23:26:44,274 - #33 =
+INFO  23:26:44,274 - #3 a
+INFO  23:26:44,274 - #36 ;
+INFO  23:26:44,274 - #43 {
+INFO  23:26:44,280 - #5 int
+INFO  23:26:44,285 - #5 main
+INFO  23:26:44,285 - #39 (
+INFO  23:26:44,285 - #40 )
+INFO  23:26:44,289 - #5 char
+INFO  23:26:44,295 - #2 2
+ERROR 23:26:44,295 - 
+Sintaksna greska na liniji 5
+INFO  23:26:44,295 - #36 ;
+INFO  23:26:44,295 - #43 {
+INFO  23:26:44,295 - #5 y
+INFO  23:26:44,295 - #33 =
+ERROR 23:26:44,295 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 5!
+INFO  23:26:44,305 - #2 2
+INFO  23:26:44,315 - #5 x
+ERROR 23:26:44,315 - 
+Sintaksna greska na liniji 7
+INFO  23:26:44,315 - #5 ajhhdas
+INFO  23:26:44,315 - #20 +
+INFO  23:26:44,315 - #2 2
+INFO  23:26:44,315 - #21 -
+INFO  23:26:44,315 - #2 6
+INFO  23:26:44,315 - #8 class
+INFO  23:26:44,315 - #6 abstract
+INFO  23:26:44,315 - #36 ;
+INFO  23:26:44,315 - #44 }
+INFO  23:26:44,315 - #44 }
+ERROR 23:26:44,315 - Greska pri parsiranju: Neispravan iskaz dodele na liniji 7!
+INFO  23:26:44,333 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationList(
+    DeclarationList(
+      DeclarationList(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        VarDeclaration(
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VariableList(
+              Variable(
+                VarError(
+                ) [VarError]
+              ) [Variable]
+              Variab(
+               x
+                NoBrackets(
+                ) [NoBrackets]
+              ) [Variab]
+            ) [VariableList]
+          ) [VarDecl]
+        ) [VarDeclaration]
+      ) [DeclarationList]
+      VarDeclaration(
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          Variable(
+            Variab(
+             y
+              NoBrackets(
+              ) [NoBrackets]
+            ) [Variab]
+          ) [Variable]
+        ) [VarDecl]
+      ) [VarDeclaration]
+    ) [DeclarationList]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+         char
+        ) [Type]
+       c
+        ConstSingle(
+          CharConst(
+           a
+          ) [CharConst]
+        ) [ConstSingle]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [DeclarationList]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodRetType(
+        Type(
+         int
+        ) [Type]
+      ) [MethodRetType]
+     main
+      NoOptionalFormParams(
+      ) [NoOptionalFormParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          Variable(
+            VarError(
+            ) [VarError]
+          ) [Variable]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        DesignatorStmt(
+          DesignatorStatement(
+            Designator(
+             y
+              NoDesigList(
+              ) [NoDesigList]
+            ) [Designator]
+            DesignatorActionError(
+            ) [DesignatorActionError]
+          ) [DesignatorStatement]
+        ) [DesignatorStmt]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  23:26:44,333 - ===================================

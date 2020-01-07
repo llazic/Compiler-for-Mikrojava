@@ -1,0 +1,209 @@
+INFO  00:51:46,677 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\kratak_program.mj
+INFO  00:51:46,702 - #16 program
+INFO  00:51:46,702 - #5 MJProgram
+INFO  00:51:46,702 - #5 int
+INFO  00:51:46,707 - #5 x
+INFO  00:51:46,707 - #36 ;
+INFO  00:51:46,707 - #5 int
+INFO  00:51:46,707 - #5 y
+INFO  00:51:46,707 - #36 ;
+INFO  00:51:46,707 - #9 const
+INFO  00:51:46,707 - #5 char
+INFO  00:51:46,707 - #5 c
+INFO  00:51:46,707 - #33 =
+INFO  00:51:46,707 - #3 a
+INFO  00:51:46,707 - #36 ;
+INFO  00:51:46,707 - #8 class
+INFO  00:51:46,707 - #5 Klasa
+INFO  00:51:46,707 - #12 extends
+INFO  00:51:46,707 - #5 I
+INFO  00:51:46,707 - #43 {
+INFO  00:51:46,707 - #43 {
+INFO  00:51:46,707 - #5 int
+INFO  00:51:46,707 - #5 a
+INFO  00:51:46,707 - #39 (
+INFO  00:51:46,707 - #40 )
+INFO  00:51:46,707 - #43 {
+INFO  00:51:46,707 - #44 }
+INFO  00:51:46,712 - #44 }
+INFO  00:51:46,712 - #44 }
+INFO  00:51:46,712 - #43 {
+INFO  00:51:46,712 - #5 int
+INFO  00:51:46,712 - #5 main
+INFO  00:51:46,712 - #39 (
+INFO  00:51:46,712 - #40 )
+INFO  00:51:46,712 - #5 char
+INFO  00:51:46,712 - #2 2
+ERROR 00:51:46,712 - 
+Sintaksna greska na liniji 12
+INFO  00:51:46,712 - #36 ;
+INFO  00:51:46,712 - #43 {
+INFO  00:51:46,712 - #5 y
+INFO  00:51:46,712 - #33 =
+ERROR 00:51:46,712 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 12!
+INFO  00:51:46,712 - #5 metoda
+INFO  00:51:46,712 - #39 (
+INFO  00:51:46,712 - #33 =
+ERROR 00:51:46,712 - 
+Sintaksna greska na liniji 14
+INFO  00:51:46,712 - #40 )
+INFO  00:51:46,712 - #36 ;
+INFO  00:51:46,712 - #13 for
+INFO  00:51:46,712 - #39 (
+INFO  00:51:46,712 - #36 ;
+ERROR 00:51:46,712 - Greska pri parsiranju: Neispravan iskaz dodele na liniji 14!
+INFO  00:51:46,712 - #33 =
+ERROR 00:51:46,712 - 
+Sintaksna greska na liniji 15
+INFO  00:51:46,712 - #36 ;
+INFO  00:51:46,712 - #40 )
+INFO  00:51:46,717 - #43 {
+INFO  00:51:46,717 - #44 }
+ERROR 00:51:46,717 - Greska pri parsiranju: Neispravan logicki izraz u for petlji na liniji 15!
+INFO  00:51:46,717 - #44 }
+INFO  00:51:46,717 - #44 }
+INFO  00:51:46,717 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationList(
+    DeclarationList(
+      DeclarationList(
+        DeclarationList(
+          NoDeclarationList(
+          ) [NoDeclarationList]
+          VarDeclaration(
+            VarDecl(
+              Type(
+               int
+              ) [Type]
+              Variable(
+                Variab(
+                 x
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [Variab]
+              ) [Variable]
+            ) [VarDecl]
+          ) [VarDeclaration]
+        ) [DeclarationList]
+        VarDeclaration(
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            Variable(
+              Variab(
+               y
+                NoBrackets(
+                ) [NoBrackets]
+              ) [Variab]
+            ) [Variable]
+          ) [VarDecl]
+        ) [VarDeclaration]
+      ) [DeclarationList]
+      ConstDeclaration(
+        ConstDecl(
+          Type(
+           char
+          ) [Type]
+         c
+          ConstSingle(
+            CharConst(
+             a
+            ) [CharConst]
+          ) [ConstSingle]
+        ) [ConstDecl]
+      ) [ConstDeclaration]
+    ) [DeclarationList]
+    ClassDeclaration(
+      ClassDeclarat(
+       Klasa
+        OptExtendsType(
+          Type(
+           I
+          ) [Type]
+        ) [OptExtendsType]
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        OptionalBracesMethodDeclarationList(
+          MethodDeclarationList(
+            NoMethodDeclarationList(
+            ) [NoMethodDeclarationList]
+            MethodDecl(
+              MethodRetType(
+                Type(
+                 int
+                ) [Type]
+              ) [MethodRetType]
+             a
+              NoOptionalFormParams(
+              ) [NoOptionalFormParams]
+              NoVarDeclarationList(
+              ) [NoVarDeclarationList]
+              NoStmtList(
+              ) [NoStmtList]
+            ) [MethodDecl]
+          ) [MethodDeclarationList]
+        ) [OptionalBracesMethodDeclarationList]
+      ) [ClassDeclarat]
+    ) [ClassDeclaration]
+  ) [DeclarationList]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodRetType(
+        Type(
+         int
+        ) [Type]
+      ) [MethodRetType]
+     main
+      NoOptionalFormParams(
+      ) [NoOptionalFormParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          Variable(
+            VarError(
+            ) [VarError]
+          ) [Variable]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StmtList(
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          DesignatorStmt(
+            DesignatorStatement(
+              Designator(
+               y
+                NoDesigList(
+                ) [NoDesigList]
+              ) [Designator]
+              DesignatorActionError(
+              ) [DesignatorActionError]
+            ) [DesignatorStatement]
+          ) [DesignatorStmt]
+        ) [StmtList]
+        ForStmt(
+          NoOptionalDesigStatement(
+          ) [NoOptionalDesigStatement]
+          ConditionError(
+          ) [ConditionError]
+          NoOptionalDesigStatement(
+          ) [NoOptionalDesigStatement]
+          NestedStmt(
+            NoStmtList(
+            ) [NoStmtList]
+          ) [NestedStmt]
+        ) [ForStmt]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  00:51:46,717 - ===================================

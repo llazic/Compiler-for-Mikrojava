@@ -1,0 +1,45 @@
+INFO  23:28:38,155 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\kratak_program.mj
+INFO  23:28:38,183 - #16 program
+INFO  23:28:38,183 - #5 MJProgram
+INFO  23:28:38,183 - #5 int
+INFO  23:28:38,184 - #2 2
+ERROR 23:28:38,184 - 
+Sintaksna greska na liniji 2
+INFO  23:28:38,184 - #37 ,
+INFO  23:28:38,184 - #5 x
+INFO  23:28:38,184 - #36 ;
+INFO  23:28:38,184 - #5 int
+ERROR 23:28:38,185 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 2!
+INFO  23:28:38,186 - #5 y
+INFO  23:28:38,186 - #36 ;
+INFO  23:28:38,187 - #9 const
+INFO  23:28:38,187 - #5 char
+INFO  23:28:38,187 - #5 c
+INFO  23:28:38,187 - #33 =
+INFO  23:28:38,187 - #3 a
+INFO  23:28:38,187 - #36 ;
+INFO  23:28:38,188 - #43 {
+INFO  23:28:38,188 - #5 int
+INFO  23:28:38,188 - #5 main
+INFO  23:28:38,189 - #39 (
+INFO  23:28:38,189 - #40 )
+INFO  23:28:38,189 - #5 char
+INFO  23:28:38,189 - #2 2
+ERROR 23:28:38,189 - 
+Sintaksna greska na liniji 5
+INFO  23:28:38,189 - #36 ;
+INFO  23:28:38,189 - #43 {
+INFO  23:28:38,189 - #5 y
+INFO  23:28:38,189 - #33 =
+ERROR 23:28:38,190 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 5!
+INFO  23:28:38,190 - #5 metoda
+INFO  23:28:38,191 - #39 (
+INFO  23:28:38,191 - #33 =
+ERROR 23:28:38,191 - 
+Sintaksna greska na liniji 7
+INFO  23:28:38,191 - #40 )
+INFO  23:28:38,191 - #36 ;
+INFO  23:28:38,191 - #5 a
+INFO  23:28:38,191 - #44 }
+INFO  23:28:38,191 - #44 }
+ERROR 23:28:38,192 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 9

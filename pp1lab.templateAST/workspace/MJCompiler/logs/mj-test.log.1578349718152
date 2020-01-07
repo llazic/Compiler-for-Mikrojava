@@ -1,0 +1,145 @@
+INFO  23:27:47,725 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\kratak_program.mj
+INFO  23:27:47,752 - #16 program
+INFO  23:27:47,752 - #5 MJProgram
+INFO  23:27:47,752 - #5 int
+INFO  23:27:47,753 - #2 2
+ERROR 23:27:47,753 - 
+Sintaksna greska na liniji 2
+INFO  23:27:47,753 - #37 ,
+INFO  23:27:47,753 - #5 x
+INFO  23:27:47,753 - #36 ;
+INFO  23:27:47,754 - #5 int
+ERROR 23:27:47,754 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 2!
+INFO  23:27:47,755 - #5 y
+INFO  23:27:47,755 - #36 ;
+INFO  23:27:47,755 - #9 const
+INFO  23:27:47,756 - #5 char
+INFO  23:27:47,756 - #5 c
+INFO  23:27:47,756 - #33 =
+INFO  23:27:47,756 - #3 a
+INFO  23:27:47,756 - #36 ;
+INFO  23:27:47,756 - #43 {
+INFO  23:27:47,757 - #5 int
+INFO  23:27:47,757 - #5 main
+INFO  23:27:47,757 - #39 (
+INFO  23:27:47,757 - #40 )
+INFO  23:27:47,758 - #5 char
+INFO  23:27:47,758 - #2 2
+ERROR 23:27:47,758 - 
+Sintaksna greska na liniji 5
+INFO  23:27:47,758 - #36 ;
+INFO  23:27:47,758 - #43 {
+INFO  23:27:47,758 - #5 y
+INFO  23:27:47,758 - #33 =
+ERROR 23:27:47,758 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 5!
+INFO  23:27:47,759 - #5 metoda
+INFO  23:27:47,760 - #39 (
+INFO  23:27:47,760 - #33 =
+ERROR 23:27:47,760 - 
+Sintaksna greska na liniji 7
+INFO  23:27:47,760 - #40 )
+INFO  23:27:47,760 - #36 ;
+INFO  23:27:47,760 - #44 }
+INFO  23:27:47,760 - #44 }
+ERROR 23:27:47,760 - Greska pri parsiranju: Neispravan iskaz dodele na liniji 7!
+INFO  23:27:47,762 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationList(
+    DeclarationList(
+      DeclarationList(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        VarDeclaration(
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VariableList(
+              Variable(
+                VarError(
+                ) [VarError]
+              ) [Variable]
+              Variab(
+               x
+                NoBrackets(
+                ) [NoBrackets]
+              ) [Variab]
+            ) [VariableList]
+          ) [VarDecl]
+        ) [VarDeclaration]
+      ) [DeclarationList]
+      VarDeclaration(
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          Variable(
+            Variab(
+             y
+              NoBrackets(
+              ) [NoBrackets]
+            ) [Variab]
+          ) [Variable]
+        ) [VarDecl]
+      ) [VarDeclaration]
+    ) [DeclarationList]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+         char
+        ) [Type]
+       c
+        ConstSingle(
+          CharConst(
+           a
+          ) [CharConst]
+        ) [ConstSingle]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [DeclarationList]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodRetType(
+        Type(
+         int
+        ) [Type]
+      ) [MethodRetType]
+     main
+      NoOptionalFormParams(
+      ) [NoOptionalFormParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          Variable(
+            VarError(
+            ) [VarError]
+          ) [Variable]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        DesignatorStmt(
+          DesignatorStatement(
+            Designator(
+             y
+              NoDesigList(
+              ) [NoDesigList]
+            ) [Designator]
+            DesignatorActionError(
+            ) [DesignatorActionError]
+          ) [DesignatorStatement]
+        ) [DesignatorStmt]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  23:27:47,762 - ===================================

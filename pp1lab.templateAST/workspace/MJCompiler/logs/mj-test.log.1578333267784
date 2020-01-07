@@ -1,0 +1,163 @@
+INFO  18:53:11,619 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\kratak_program.mj
+INFO  18:53:11,644 - #16 program
+INFO  18:53:11,644 - #5 MJProgram
+INFO  18:53:11,644 - #5 int
+INFO  18:53:11,644 - #2 2
+ERROR 18:53:11,644 - 
+Sintaksna greska na liniji 2
+INFO  18:53:11,644 - #37 ,
+INFO  18:53:11,644 - #5 x
+INFO  18:53:11,644 - #36 ;
+INFO  18:53:11,644 - #5 int
+ERROR 18:53:11,644 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 2!
+INFO  18:53:11,644 - #5 y
+INFO  18:53:11,644 - #36 ;
+INFO  18:53:11,649 - #9 const
+INFO  18:53:11,649 - #5 char
+INFO  18:53:11,649 - #5 c
+INFO  18:53:11,649 - #33 =
+INFO  18:53:11,649 - #3 a
+INFO  18:53:11,649 - #36 ;
+INFO  18:53:11,649 - #43 {
+INFO  18:53:11,649 - #5 int
+INFO  18:53:11,649 - #5 main
+INFO  18:53:11,649 - #39 (
+INFO  18:53:11,649 - #40 )
+INFO  18:53:11,649 - #5 char
+INFO  18:53:11,649 - #5 c
+INFO  18:53:11,649 - #37 ,
+INFO  18:53:11,649 - #33 =
+ERROR 18:53:11,649 - 
+Sintaksna greska na liniji 5
+INFO  18:53:11,649 - #37 ,
+INFO  18:53:11,649 - #2 2
+INFO  18:53:11,649 - #37 ,
+INFO  18:53:11,649 - #5 d
+INFO  18:53:11,649 - #36 ;
+INFO  18:53:11,649 - #43 {
+ERROR 18:53:11,649 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 5!
+INFO  18:53:11,649 - #5 y
+INFO  18:53:11,649 - #33 =
+INFO  18:53:11,649 - #2 2
+INFO  18:53:11,649 - #5 x
+ERROR 18:53:11,649 - 
+Sintaksna greska na liniji 7
+INFO  18:53:11,649 - #36 ;
+INFO  18:53:11,649 - #44 }
+INFO  18:53:11,649 - #44 }
+ERROR 18:53:11,649 - Greska pri parsiranju: Neispravan iskaz dodele na liniji 7!
+INFO  18:53:11,654 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationList(
+    DeclarationList(
+      DeclarationList(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        VarDeclaration(
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VariableList(
+              Variable(
+                VarError(
+                ) [VarError]
+              ) [Variable]
+              Variab(
+               x
+                NoBrackets(
+                ) [NoBrackets]
+              ) [Variab]
+            ) [VariableList]
+          ) [VarDecl]
+        ) [VarDeclaration]
+      ) [DeclarationList]
+      VarDeclaration(
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          Variable(
+            Variab(
+             y
+              NoBrackets(
+              ) [NoBrackets]
+            ) [Variab]
+          ) [Variable]
+        ) [VarDecl]
+      ) [VarDeclaration]
+    ) [DeclarationList]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+         char
+        ) [Type]
+       c
+        ConstSingle(
+          CharConst(
+           a
+          ) [CharConst]
+        ) [ConstSingle]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [DeclarationList]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodRetType(
+        Type(
+         int
+        ) [Type]
+      ) [MethodRetType]
+     main
+      NoOptionalFormParams(
+      ) [NoOptionalFormParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          VariableList(
+            VariableList(
+              Variable(
+                Variab(
+                 c
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [Variab]
+              ) [Variable]
+              VarError(
+              ) [VarError]
+            ) [VariableList]
+            Variab(
+             d
+              NoBrackets(
+              ) [NoBrackets]
+            ) [Variab]
+          ) [VariableList]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        DesignatorStmt(
+          DesignatorStatement(
+            Designator(
+             y
+              NoDesigList(
+              ) [NoDesigList]
+            ) [Designator]
+            DesignatorActionError(
+            ) [DesignatorActionError]
+          ) [DesignatorStatement]
+        ) [DesignatorStmt]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  18:53:11,654 - ===================================

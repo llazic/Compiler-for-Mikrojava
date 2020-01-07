@@ -1,0 +1,174 @@
+INFO  18:52:41,724 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\kratak_program.mj
+INFO  18:52:41,753 - #16 program
+INFO  18:52:41,753 - #5 MJProgram
+INFO  18:52:41,753 - #5 int
+INFO  18:52:41,753 - #2 2
+ERROR 18:52:41,753 - 
+Sintaksna greska na liniji 2
+INFO  18:52:41,753 - #37 ,
+INFO  18:52:41,753 - #5 x
+INFO  18:52:41,753 - #36 ;
+INFO  18:52:41,753 - #5 int
+ERROR 18:52:41,753 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 2!
+INFO  18:52:41,753 - #5 y
+INFO  18:52:41,753 - #36 ;
+INFO  18:52:41,753 - #9 const
+INFO  18:52:41,753 - #5 char
+INFO  18:52:41,753 - #5 c
+INFO  18:52:41,753 - #33 =
+INFO  18:52:41,753 - #3 a
+INFO  18:52:41,753 - #36 ;
+INFO  18:52:41,753 - #43 {
+INFO  18:52:41,758 - #5 int
+INFO  18:52:41,758 - #5 main
+INFO  18:52:41,758 - #39 (
+INFO  18:52:41,758 - #40 )
+INFO  18:52:41,758 - #5 char
+INFO  18:52:41,758 - #5 c
+INFO  18:52:41,758 - #37 ,
+INFO  18:52:41,758 - #33 =
+ERROR 18:52:41,758 - 
+Sintaksna greska na liniji 5
+INFO  18:52:41,758 - #37 ,
+INFO  18:52:41,758 - #2 2
+INFO  18:52:41,758 - #37 ,
+INFO  18:52:41,758 - #5 d
+INFO  18:52:41,758 - #36 ;
+INFO  18:52:41,758 - #43 {
+ERROR 18:52:41,758 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 5!
+INFO  18:52:41,758 - #5 y
+INFO  18:52:41,758 - #33 =
+INFO  18:52:41,758 - #2 2
+INFO  18:52:41,758 - #36 ;
+INFO  18:52:41,758 - #44 }
+INFO  18:52:41,758 - #44 }
+INFO  18:52:41,763 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationList(
+    DeclarationList(
+      DeclarationList(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        VarDeclaration(
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VariableList(
+              Variable(
+                VarError(
+                ) [VarError]
+              ) [Variable]
+              Variab(
+               x
+                NoBrackets(
+                ) [NoBrackets]
+              ) [Variab]
+            ) [VariableList]
+          ) [VarDecl]
+        ) [VarDeclaration]
+      ) [DeclarationList]
+      VarDeclaration(
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          Variable(
+            Variab(
+             y
+              NoBrackets(
+              ) [NoBrackets]
+            ) [Variab]
+          ) [Variable]
+        ) [VarDecl]
+      ) [VarDeclaration]
+    ) [DeclarationList]
+    ConstDeclaration(
+      ConstDecl(
+        Type(
+         char
+        ) [Type]
+       c
+        ConstSingle(
+          CharConst(
+           a
+          ) [CharConst]
+        ) [ConstSingle]
+      ) [ConstDecl]
+    ) [ConstDeclaration]
+  ) [DeclarationList]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodRetType(
+        Type(
+         int
+        ) [Type]
+      ) [MethodRetType]
+     main
+      NoOptionalFormParams(
+      ) [NoOptionalFormParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          VariableList(
+            VariableList(
+              Variable(
+                Variab(
+                 c
+                  NoBrackets(
+                  ) [NoBrackets]
+                ) [Variab]
+              ) [Variable]
+              VarError(
+              ) [VarError]
+            ) [VariableList]
+            Variab(
+             d
+              NoBrackets(
+              ) [NoBrackets]
+            ) [Variab]
+          ) [VariableList]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        DesignatorStmt(
+          DesignatorStatement(
+            Designator(
+             y
+              NoDesigList(
+              ) [NoDesigList]
+            ) [Designator]
+            DesignatorActionAssign(
+              Assignop(
+              ) [Assignop]
+              Expr(
+                NoOptMinus(
+                ) [NoOptMinus]
+                Term(
+                  FactorNumConst(
+                   2
+                  ) [FactorNumConst]
+                  NoMultiplyopFactors(
+                  ) [NoMultiplyopFactors]
+                ) [Term]
+                NoAddopTerminals(
+                ) [NoAddopTerminals]
+              ) [Expr]
+            ) [DesignatorActionAssign]
+          ) [DesignatorStatement]
+        ) [DesignatorStmt]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  18:52:41,763 - ===================================

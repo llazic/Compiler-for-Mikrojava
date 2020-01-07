@@ -1,0 +1,67 @@
+INFO  00:44:06,767 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\kratak_program.mj
+INFO  00:44:06,797 - #16 program
+INFO  00:44:06,797 - #5 MJProgram
+INFO  00:44:06,797 - #5 int
+INFO  00:44:06,797 - #5 x
+INFO  00:44:06,797 - #36 ;
+INFO  00:44:06,797 - #5 int
+INFO  00:44:06,797 - #5 y
+INFO  00:44:06,797 - #36 ;
+INFO  00:44:06,797 - #9 const
+INFO  00:44:06,797 - #5 char
+INFO  00:44:06,797 - #5 c
+INFO  00:44:06,797 - #33 =
+INFO  00:44:06,797 - #3 a
+INFO  00:44:06,797 - #36 ;
+INFO  00:44:06,797 - #8 class
+INFO  00:44:06,802 - #12 extends
+ERROR 00:44:06,802 - 
+Sintaksna greska na liniji 3
+INFO  00:44:06,802 - #5 a
+INFO  00:44:06,802 - #43 {
+INFO  00:44:06,802 - #43 {
+INFO  00:44:06,802 - #6 abstract
+ERROR 00:44:06,802 - 
+Sintaksna greska na liniji 5
+INFO  00:44:06,802 - #5 int
+INFO  00:44:06,802 - #5 a
+INFO  00:44:06,802 - #39 (
+INFO  00:44:06,802 - #5 assdfa
+INFO  00:44:06,802 - #37 ,
+INFO  00:44:06,802 - #5 jaibnd
+INFO  00:44:06,802 - #40 )
+INFO  00:44:06,802 - #36 ;
+INFO  00:44:06,802 - #44 }
+INFO  00:44:06,802 - #44 }
+INFO  00:44:06,802 - #43 {
+INFO  00:44:06,802 - #5 int
+INFO  00:44:06,802 - #5 main
+INFO  00:44:06,802 - #39 (
+ERROR 00:44:06,802 - 
+Sintaksna greska na liniji 9
+INFO  00:44:06,802 - #40 )
+INFO  00:44:06,802 - #5 char
+INFO  00:44:06,802 - #2 2
+INFO  00:44:06,802 - #36 ;
+INFO  00:44:06,802 - #43 {
+INFO  00:44:06,802 - #5 y
+INFO  00:44:06,802 - #33 =
+ERROR 00:44:06,802 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 9!
+ERROR 00:44:06,802 - 
+Sintaksna greska na liniji 14
+INFO  00:44:06,802 - #5 metoda
+INFO  00:44:06,802 - #39 (
+INFO  00:44:06,802 - #33 =
+INFO  00:44:06,802 - #40 )
+INFO  00:44:06,802 - #36 ;
+INFO  00:44:06,802 - #13 for
+INFO  00:44:06,802 - #39 (
+INFO  00:44:06,802 - #36 ;
+INFO  00:44:06,802 - #33 =
+INFO  00:44:06,802 - #36 ;
+INFO  00:44:06,802 - #40 )
+INFO  00:44:06,802 - #43 {
+INFO  00:44:06,802 - #44 }
+INFO  00:44:06,802 - #44 }
+INFO  00:44:06,802 - #44 }
+ERROR 00:44:06,802 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 17
