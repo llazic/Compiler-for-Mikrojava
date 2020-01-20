@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 7/0/2020 1:9:13
+// 20/0/2020 15:45:3
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -31,11 +31,13 @@ public interface Visitor {
     public void visit(OptionalBracesMethodAbstractMethodDeclList OptionalBracesMethodAbstractMethodDeclList);
     public void visit(MulopFactors MulopFactors);
     public void visit(OptionalFormPars OptionalFormPars);
+    public void visit(ClassExtendsError ClassExtendsError);
     public void visit(VarDeclList VarDeclList);
     public void visit(OptionalActPars OptionalActPars);
     public void visit(ActPars ActPars);
     public void visit(DesignatorList DesignatorList);
     public void visit(OptionalRelopExpr OptionalRelopExpr);
+    public void visit(DesignatorStatement DesignatorStatement);
     public void visit(AbstractClassDecl AbstractClassDecl);
     public void visit(DesignatorDotIndex DesignatorDotIndex);
     public void visit(OptionalCondition OptionalCondition);
@@ -99,12 +101,12 @@ public interface Visitor {
     public void visit(ActParams ActParams);
     public void visit(NoOptionalActualParams NoOptionalActualParams);
     public void visit(OptionalActualParams OptionalActualParams);
-    public void visit(DesignatorActionError DesignatorActionError);
     public void visit(DesignatorActionMinusMinus DesignatorActionMinusMinus);
     public void visit(DesignatorActionPlusPlus DesignatorActionPlusPlus);
     public void visit(DesignatorActionCallMethod DesignatorActionCallMethod);
     public void visit(DesignatorActionAssign DesignatorActionAssign);
-    public void visit(DesignatorStatement DesignatorStatement);
+    public void visit(DesignatorAssignopError DesignatorAssignopError);
+    public void visit(DesignatorStatementNoError DesignatorStatementNoError);
     public void visit(NoOptionalNumberConst NoOptionalNumberConst);
     public void visit(OptionalNumberConst OptionalNumberConst);
     public void visit(NoOptionalExpression NoOptionalExpression);
@@ -127,6 +129,7 @@ public interface Visitor {
     public void visit(IfStmt IfStmt);
     public void visit(DesignatorStmt DesignatorStmt);
     public void visit(Type Type);
+    public void visit(FormalParamaterError FormalParamaterError);
     public void visit(FormalParameter FormalParameter);
     public void visit(FormParam FormParam);
     public void visit(FormParams FormParams);
@@ -152,6 +155,8 @@ public interface Visitor {
     public void visit(VarDeclarationList VarDeclarationList);
     public void visit(NoOptExtendsType NoOptExtendsType);
     public void visit(OptExtendsType OptExtendsType);
+    public void visit(NoClassExtendsError NoClassExtendsError);
+    public void visit(ClassExtendsErrorExists ClassExtendsErrorExists);
     public void visit(ClassDeclarat ClassDeclarat);
     public void visit(NoBrackets NoBrackets);
     public void visit(Brackets Brackets);

@@ -2,7 +2,7 @@ program MJProgram
 	int x; int y; const char c = 'a';
 	class Klasa extends F{
 		{
-			int a() {}
+			//int a(int a, sdjhjk32439fsd  = === =asd;l) {}
 		}
 	}
 {
@@ -10,8 +10,10 @@ program MJProgram
 		// int a = 5
 	)
 		char 2, a, 2;
+		int 2; // prijavljuje samo jednu gresku jer ce upariti "2; int 2" kao jednu gresku
 	{
-		y = metoda(=);
-		for (;=;){}
+		a = 2;
+		//y = metoda(=);
+		//for (;=;){}
 	}
 }

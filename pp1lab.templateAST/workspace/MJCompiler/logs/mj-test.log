@@ -1,160 +1,262 @@
-INFO  00:30:19,335 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\kratak_program.mj
-INFO  00:30:19,368 - #16 program
-INFO  00:30:19,368 - #5 MJProgram
-INFO  00:30:19,368 - #5 int
-INFO  00:30:19,369 - #5 x
-INFO  00:30:19,369 - #36 ;
-INFO  00:30:19,370 - #5 int
-INFO  00:30:19,371 - #5 y
-INFO  00:30:19,371 - #36 ;
-INFO  00:30:19,371 - #9 const
-INFO  00:30:19,371 - #5 char
-INFO  00:30:19,371 - #5 c
-INFO  00:30:19,371 - #33 =
-INFO  00:30:19,371 - #3 a
-INFO  00:30:19,372 - #36 ;
-INFO  00:30:19,372 - #8 class
-INFO  00:30:19,372 - #5 Klasa
-INFO  00:30:19,373 - #12 extends
-INFO  00:30:19,373 - #5 F
-INFO  00:30:19,373 - #43 {
-INFO  00:30:19,373 - #43 {
-INFO  00:30:19,373 - #5 int
-INFO  00:30:19,374 - #5 a
-INFO  00:30:19,374 - #39 (
-INFO  00:30:19,374 - #40 )
-INFO  00:30:19,374 - #43 {
-INFO  00:30:19,374 - #44 }
-INFO  00:30:19,374 - #44 }
-INFO  00:30:19,375 - #44 }
-INFO  00:30:19,375 - #43 {
-INFO  00:30:19,375 - #5 int
-INFO  00:30:19,375 - #5 main
-INFO  00:30:19,375 - #39 (
-INFO  00:30:19,375 - #40 )
-INFO  00:30:19,375 - #5 char
-INFO  00:30:19,375 - #2 2
-ERROR 00:30:19,376 - 
+INFO  15:48:58,730 - Compiling source file: D:\Faks\IV godina\VII semestar\PP1\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\oporavak\oporavak_deklaracija_apstraktne_metode.mj
+INFO  15:48:58,759 - #16 program
+INFO  15:48:58,759 - #5 MJProgram
+INFO  15:48:58,759 - #6 abstract
+INFO  15:48:58,760 - #8 class
+INFO  15:48:58,760 - #5 ApstraktnaKlasa
+INFO  15:48:58,760 - #43 {
+INFO  15:48:58,761 - #43 {
+INFO  15:48:58,761 - #6 abstract
+INFO  15:48:58,761 - #36 ;
+ERROR 15:48:58,761 - 
+Sintaksna greska na liniji 4
+INFO  15:48:58,762 - #5 int
+INFO  15:48:58,762 - #5 a
+INFO  15:48:58,762 - #39 (
+ERROR 15:48:58,762 - Greska pri parsiranju: Neispravna deklaracija metode na liniji 2!
+INFO  15:48:58,763 - #40 )
+INFO  15:48:58,764 - #43 {
+INFO  15:48:58,764 - #44 }
+INFO  15:48:58,764 - #5 sadasdsa
+INFO  15:48:58,764 - #36 ;
+ERROR 15:48:58,764 - 
+Sintaksna greska na liniji 6
+INFO  15:48:58,764 - #5 int
+INFO  15:48:58,764 - #5 a
+INFO  15:48:58,764 - #39 (
+ERROR 15:48:58,764 - Greska pri parsiranju: Neispravna deklaracija metode na liniji 2!
+INFO  15:48:58,765 - #40 )
+INFO  15:48:58,765 - #43 {
+INFO  15:48:58,765 - #44 }
+INFO  15:48:58,765 - #5 int
+INFO  15:48:58,765 - #5 a
+INFO  15:48:58,765 - #39 (
+INFO  15:48:58,765 - #40 )
+INFO  15:48:58,765 - #43 {
+INFO  15:48:58,765 - #44 }
+INFO  15:48:58,765 - #5 ai
+INFO  15:48:58,765 - #5 jso
+INFO  15:48:58,765 - #5 js
+ERROR 15:48:58,765 - 
+Sintaksna greska na liniji 10
+INFO  15:48:58,765 - #2 55
+INFO  15:48:58,765 - #21 -
+INFO  15:48:58,765 - #5 asd
+INFO  15:48:58,765 - #21 -
+INFO  15:48:58,765 - #36 ;
+INFO  15:48:58,765 - #5 int
+INFO  15:48:58,765 - #5 a
+INFO  15:48:58,765 - #39 (
+ERROR 15:48:58,765 - Greska pri parsiranju: Neispravna deklaracija metode na liniji 2!
+INFO  15:48:58,765 - #40 )
+INFO  15:48:58,765 - #43 {
+INFO  15:48:58,765 - #44 }
+INFO  15:48:58,766 - #6 abstract
+INFO  15:48:58,766 - #5 int
+INFO  15:48:58,766 - #5 ahahahaha
+INFO  15:48:58,766 - #36 ;
+ERROR 15:48:58,766 - 
 Sintaksna greska na liniji 12
-INFO  00:30:19,376 - #37 ,
-INFO  00:30:19,376 - #5 a
-INFO  00:30:19,376 - #37 ,
-INFO  00:30:19,376 - #2 2
-ERROR 00:30:19,376 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 12!
-ERROR 00:30:19,377 - 
-Sintaksna greska na liniji 12
-INFO  00:30:19,377 - #36 ;
-INFO  00:30:19,377 - #43 {
-INFO  00:30:19,377 - #5 y
-INFO  00:30:19,377 - #33 =
-ERROR 00:30:19,377 - Greska pri parsiranju: Neispravna deklaracija promenljive na liniji 12!
-INFO  00:30:19,378 - #5 metoda
-INFO  00:30:19,379 - #39 (
-INFO  00:30:19,379 - #33 =
-ERROR 00:30:19,379 - 
+INFO  15:48:58,766 - #5 int
+INFO  15:48:58,766 - #5 a
+INFO  15:48:58,766 - #39 (
+ERROR 15:48:58,766 - Greska pri parsiranju: Neispravna deklaracija metode na liniji 2!
+INFO  15:48:58,766 - #40 )
+INFO  15:48:58,766 - #43 {
+INFO  15:48:58,766 - #44 }
+INFO  15:48:58,766 - #5 a2
+INFO  15:48:58,766 - #36 ;
+ERROR 15:48:58,766 - 
 Sintaksna greska na liniji 14
-INFO  00:30:19,379 - #40 )
-INFO  00:30:19,379 - #36 ;
-INFO  00:30:19,379 - #13 for
-INFO  00:30:19,379 - #39 (
-INFO  00:30:19,379 - #36 ;
-ERROR 00:30:19,379 - Greska pri parsiranju: Neispravan iskaz dodele na liniji 14!
-INFO  00:30:19,380 - #33 =
-ERROR 00:30:19,380 - 
-Sintaksna greska na liniji 15
-INFO  00:30:19,383 - #36 ;
-INFO  00:30:19,383 - #40 )
-INFO  00:30:19,383 - #43 {
-INFO  00:30:19,383 - #44 }
-ERROR 00:30:19,383 - Greska pri parsiranju: Neispravan logicki izraz u for petlji na liniji 15!
-INFO  00:30:19,384 - #44 }
-INFO  00:30:19,384 - #44 }
-INFO  00:30:19,385 - Program(
+INFO  15:48:58,766 - #5 int
+INFO  15:48:58,766 - #5 a
+INFO  15:48:58,766 - #39 (
+ERROR 15:48:58,766 - Greska pri parsiranju: Neispravna deklaracija metode na liniji 2!
+INFO  15:48:58,766 - #40 )
+INFO  15:48:58,766 - #43 {
+INFO  15:48:58,766 - #44 }
+INFO  15:48:58,766 - #6 abstract
+INFO  15:48:58,766 - #2 2
+ERROR 15:48:58,767 - 
+Sintaksna greska na liniji 16
+INFO  15:48:58,767 - #36 ;
+INFO  15:48:58,767 - #44 }
+INFO  15:48:58,767 - #44 }
+INFO  15:48:58,767 - #43 {
+ERROR 15:48:58,767 - Greska pri parsiranju: Neispravna deklaracija metode na liniji 2!
+INFO  15:48:58,767 - #5 int
+INFO  15:48:58,767 - #5 main
+INFO  15:48:58,767 - #39 (
+INFO  15:48:58,767 - #40 )
+INFO  15:48:58,768 - #43 {
+INFO  15:48:58,768 - #44 }
+INFO  15:48:58,768 - #44 }
+INFO  15:48:58,769 - Program(
   ProgName(
    MJProgram
   ) [ProgName]
   DeclarationList(
-    DeclarationList(
-      DeclarationList(
-        DeclarationList(
-          NoDeclarationList(
-          ) [NoDeclarationList]
-          VarDeclaration(
-            VarDecl(
-              Type(
-               int
-              ) [Type]
-              Variable(
-                Variab(
-                 x
-                  NoBrackets(
-                  ) [NoBrackets]
-                ) [Variab]
-              ) [Variable]
-            ) [VarDecl]
-          ) [VarDeclaration]
-        ) [DeclarationList]
-        VarDeclaration(
-          VarDecl(
-            Type(
-             int
-            ) [Type]
-            Variable(
-              Variab(
-               y
-                NoBrackets(
-                ) [NoBrackets]
-              ) [Variab]
-            ) [Variable]
-          ) [VarDecl]
-        ) [VarDeclaration]
-      ) [DeclarationList]
-      ConstDeclaration(
-        ConstDecl(
-          Type(
-           char
-          ) [Type]
-         c
-          ConstSingle(
-            CharConst(
-             a
-            ) [CharConst]
-          ) [ConstSingle]
-        ) [ConstDecl]
-      ) [ConstDeclaration]
-    ) [DeclarationList]
-    ClassDeclaration(
-      ClassDeclarat(
-       Klasa
-        OptExtendsType(
-          Type(
-           F
-          ) [Type]
-        ) [OptExtendsType]
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    AbstractClassDeclaration(
+      AbstractClassDeclarat(
+       ApstraktnaKlasa
+        NoClassExtendsError(
+        ) [NoClassExtendsError]
+        NoOptExtendsType(
+        ) [NoOptExtendsType]
         NoVarDeclarationList(
         ) [NoVarDeclarationList]
-        OptionalBracesMethodDeclarationList(
-          MethodDeclarationList(
-            NoMethodDeclarationList(
-            ) [NoMethodDeclarationList]
-            MethodDecl(
-              MethodRetType(
-                Type(
-                 int
-                ) [Type]
-              ) [MethodRetType]
-             a
-              NoOptionalFormParams(
-              ) [NoOptionalFormParams]
-              NoVarDeclarationList(
-              ) [NoVarDeclarationList]
-              NoStmtList(
-              ) [NoStmtList]
-            ) [MethodDecl]
-          ) [MethodDeclarationList]
-        ) [OptionalBracesMethodDeclarationList]
-      ) [ClassDeclarat]
-    ) [ClassDeclaration]
+        OptionalBracesMethodAbstractMethodDeclarationList(
+          MethodAbstractMethodDeclarationList(
+            MethodAbstractMethodDeclarationList(
+              MethodAbstractMethodDeclarationList(
+                MethodAbstractMethodDeclarationList(
+                  MethodAbstractMethodDeclarationList(
+                    MethodAbstractMethodDeclarationList(
+                      MethodAbstractMethodDeclarationList(
+                        MethodAbstractMethodDeclarationList(
+                          MethodAbstractMethodDeclarationList(
+                            MethodAbstractMethodDeclarationList(
+                              MethodAbstractMethodDeclarationList(
+                                MethodAbstractMethodDeclarationList(
+                                  NoMethodAbstractMethodDeclarationList(
+                                  ) [NoMethodAbstractMethodDeclarationList]
+                                  AbstractMethodDeclar(
+                                    AbstractMethodDeclarationError(
+                                    ) [AbstractMethodDeclarationError]
+                                  ) [AbstractMethodDeclar]
+                                ) [MethodAbstractMethodDeclarationList]
+                                MethodDeclaration(
+                                  MethodDecl(
+                                    MethodRetType(
+                                      Type(
+                                       int
+                                      ) [Type]
+                                    ) [MethodRetType]
+                                   a
+                                    NoOptionalFormParams(
+                                    ) [NoOptionalFormParams]
+                                    NoVarDeclarationList(
+                                    ) [NoVarDeclarationList]
+                                    NoStmtList(
+                                    ) [NoStmtList]
+                                  ) [MethodDecl]
+                                ) [MethodDeclaration]
+                              ) [MethodAbstractMethodDeclarationList]
+                              AbstractMethodDeclar(
+                                AbstractMethodDeclarationError(
+                                ) [AbstractMethodDeclarationError]
+                              ) [AbstractMethodDeclar]
+                            ) [MethodAbstractMethodDeclarationList]
+                            MethodDeclaration(
+                              MethodDecl(
+                                MethodRetType(
+                                  Type(
+                                   int
+                                  ) [Type]
+                                ) [MethodRetType]
+                               a
+                                NoOptionalFormParams(
+                                ) [NoOptionalFormParams]
+                                NoVarDeclarationList(
+                                ) [NoVarDeclarationList]
+                                NoStmtList(
+                                ) [NoStmtList]
+                              ) [MethodDecl]
+                            ) [MethodDeclaration]
+                          ) [MethodAbstractMethodDeclarationList]
+                          MethodDeclaration(
+                            MethodDecl(
+                              MethodRetType(
+                                Type(
+                                 int
+                                ) [Type]
+                              ) [MethodRetType]
+                             a
+                              NoOptionalFormParams(
+                              ) [NoOptionalFormParams]
+                              NoVarDeclarationList(
+                              ) [NoVarDeclarationList]
+                              NoStmtList(
+                              ) [NoStmtList]
+                            ) [MethodDecl]
+                          ) [MethodDeclaration]
+                        ) [MethodAbstractMethodDeclarationList]
+                        AbstractMethodDeclar(
+                          AbstractMethodDeclarationError(
+                          ) [AbstractMethodDeclarationError]
+                        ) [AbstractMethodDeclar]
+                      ) [MethodAbstractMethodDeclarationList]
+                      MethodDeclaration(
+                        MethodDecl(
+                          MethodRetType(
+                            Type(
+                             int
+                            ) [Type]
+                          ) [MethodRetType]
+                         a
+                          NoOptionalFormParams(
+                          ) [NoOptionalFormParams]
+                          NoVarDeclarationList(
+                          ) [NoVarDeclarationList]
+                          NoStmtList(
+                          ) [NoStmtList]
+                        ) [MethodDecl]
+                      ) [MethodDeclaration]
+                    ) [MethodAbstractMethodDeclarationList]
+                    AbstractMethodDeclar(
+                      AbstractMethodDeclarationError(
+                      ) [AbstractMethodDeclarationError]
+                    ) [AbstractMethodDeclar]
+                  ) [MethodAbstractMethodDeclarationList]
+                  MethodDeclaration(
+                    MethodDecl(
+                      MethodRetType(
+                        Type(
+                         int
+                        ) [Type]
+                      ) [MethodRetType]
+                     a
+                      NoOptionalFormParams(
+                      ) [NoOptionalFormParams]
+                      NoVarDeclarationList(
+                      ) [NoVarDeclarationList]
+                      NoStmtList(
+                      ) [NoStmtList]
+                    ) [MethodDecl]
+                  ) [MethodDeclaration]
+                ) [MethodAbstractMethodDeclarationList]
+                AbstractMethodDeclar(
+                  AbstractMethodDeclarationError(
+                  ) [AbstractMethodDeclarationError]
+                ) [AbstractMethodDeclar]
+              ) [MethodAbstractMethodDeclarationList]
+              MethodDeclaration(
+                MethodDecl(
+                  MethodRetType(
+                    Type(
+                     int
+                    ) [Type]
+                  ) [MethodRetType]
+                 a
+                  NoOptionalFormParams(
+                  ) [NoOptionalFormParams]
+                  NoVarDeclarationList(
+                  ) [NoVarDeclarationList]
+                  NoStmtList(
+                  ) [NoStmtList]
+                ) [MethodDecl]
+              ) [MethodDeclaration]
+            ) [MethodAbstractMethodDeclarationList]
+            AbstractMethodDeclar(
+              AbstractMethodDeclarationError(
+              ) [AbstractMethodDeclarationError]
+            ) [AbstractMethodDeclar]
+          ) [MethodAbstractMethodDeclarationList]
+        ) [OptionalBracesMethodAbstractMethodDeclarationList]
+      ) [AbstractClassDeclarat]
+    ) [AbstractClassDeclaration]
   ) [DeclarationList]
   MethodDeclarationList(
     NoMethodDeclarationList(
@@ -168,60 +270,11 @@ INFO  00:30:19,385 - Program(
      main
       NoOptionalFormParams(
       ) [NoOptionalFormParams]
-      VarDeclarationList(
-        NoVarDeclarationList(
-        ) [NoVarDeclarationList]
-        VarDecl(
-          Type(
-           char
-          ) [Type]
-          VariableList(
-            VariableList(
-              Variable(
-                VarError(
-                ) [VarError]
-              ) [Variable]
-              Variab(
-               a
-                NoBrackets(
-                ) [NoBrackets]
-              ) [Variab]
-            ) [VariableList]
-            VarError(
-            ) [VarError]
-          ) [VariableList]
-        ) [VarDecl]
-      ) [VarDeclarationList]
-      StmtList(
-        StmtList(
-          NoStmtList(
-          ) [NoStmtList]
-          DesignatorStmt(
-            DesignatorStatement(
-              Designator(
-               y
-                NoDesigList(
-                ) [NoDesigList]
-              ) [Designator]
-              DesignatorActionError(
-              ) [DesignatorActionError]
-            ) [DesignatorStatement]
-          ) [DesignatorStmt]
-        ) [StmtList]
-        ForStmt(
-          NoOptionalDesigStatement(
-          ) [NoOptionalDesigStatement]
-          ConditionError(
-          ) [ConditionError]
-          NoOptionalDesigStatement(
-          ) [NoOptionalDesigStatement]
-          NestedStmt(
-            NoStmtList(
-            ) [NoStmtList]
-          ) [NestedStmt]
-        ) [ForStmt]
-      ) [StmtList]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      NoStmtList(
+      ) [NoStmtList]
     ) [MethodDecl]
   ) [MethodDeclarationList]
 ) [Program]
-INFO  00:30:19,385 - ===================================
+INFO  15:48:58,769 - ===================================

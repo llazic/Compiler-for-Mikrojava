@@ -1,0 +1,18 @@
+program MJProgram
+{
+	int main()
+	{
+		ispravno = ispravno;
+		2 =;
+		ispravno = ispravno;
+		2 = 5;
+		ispravno = ispravno;
+		a = 2a;
+		ispravno = ispravno;
+		a = /;
+		ispravno = ispravno;
+		a = 2a;
+		ispravno = ispravno;
+		j+++;
+	}
+}

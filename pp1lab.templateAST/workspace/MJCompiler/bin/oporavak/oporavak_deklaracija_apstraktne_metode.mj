@@ -1,0 +1,23 @@
+program MJProgram
+	abstract class ApstraktnaKlasa{
+		{
+			abstract;
+			int a() {}
+			sadasdsa;
+			int a() {}
+			//abstract int a() a; 	//ovo ne radi
+			int a() {}
+			ai jso js 55 -asd -;
+			int a() {}
+			abstract int ahahahaha;
+			int a() {}
+			//2;					//ovo ne radi
+			int a() {}
+			abstract 2;
+		}
+	}
+{
+	int main()
+	{
+	}
+}

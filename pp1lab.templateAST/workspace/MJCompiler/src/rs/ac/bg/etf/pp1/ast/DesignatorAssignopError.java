@@ -1,13 +1,13 @@
 // generated with ast extension for cup
 // version 0.8
-// 7/0/2020 1:9:13
+// 20/0/2020 15:45:3
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class DesignatorActionError extends DesignatorAction {
+public class DesignatorAssignopError extends DesignatorStatement {
 
-    public DesignatorActionError () {
+    public DesignatorAssignopError () {
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +28,10 @@ public class DesignatorActionError extends DesignatorAction {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("DesignatorActionError(\n");
+        buffer.append("DesignatorAssignopError(\n");
 
         buffer.append(tab);
-        buffer.append(") [DesignatorActionError]");
+        buffer.append(") [DesignatorAssignopError]");
         return buffer.toString();
     }
 }

@@ -12,7 +12,6 @@ parser code {:
 	
 	Logger log = Logger.getLogger(getClass());
    
-   
     // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
      
     public void report_fatal_error(String message, Object info) throws java.lang.Exception {
@@ -82,7 +81,7 @@ nonterminal OptionalElseStatement, ElseStatement, OptionalDesignatorStatement;
 nonterminal OptionalCondition, OptionalExpr, OptionalNumConst, DesignatorStatement;
 nonterminal DesignatorAction, OptionalActPars, ActPars, Condition, CondTerm;
 nonterminal CondFact, OptionalRelopExpr, Expr, OptionalMinus, AddopTerms;
-nonterminal Term, MulopFactors, Factor, OptionalParenthesesActPars;
+nonterminal Term, MulopFactors, Factor, OptionalParenthesesActPars, ClassExtendsError;
 nonterminal OptionalBracketsExpr, Designator, DesignatorList, DesignatorDotIndex;
 
 precedence left ELSE;
@@ -119,17 +118,17 @@ VarList ::= (VariableList) VarList COMMA Var
 		  | (Variable) Var
 		  ;
 Var ::= (Variab) IDENT OptionalBrackets
-	  | (VarError) error:l {: parser.report_error("Greska pri parsiranju: Neispravna deklaracija promenljive na liniji " + lleft + "!", null); :}
+	  | (VarError) error:e1 {: parser.report_error("Greska pri parsiranju: Neispravna deklaracija promenljive na liniji " + e1left + "!", null); :}
 	  ;
 OptionalBrackets ::= (Brackets) LBRACKET RBRACKET
 				   | (NoBrackets) /* epsilon */
 				   ;
 
 
-ClassDecl ::= (ClassDeclarat) CLASS IDENT OptionalExtendsType LBRACE VarDeclList OptionalBracesMethodDeclList RBRACE
-			/*| (ClassDeclaratError) CLASS IDENT error:l OptionalExtendsType LBRACE VarDeclList OptionalBracesMethodDeclList RBRACE
-				{: parser.report_error("Greska pri parsiranju: Neispravna deklaracija prosirenja natklase na liniji " + lleft + "!", null); :} */
-			;
+ClassDecl ::= (ClassDeclarat) CLASS IDENT ClassExtendsError OptionalExtendsType LBRACE VarDeclList OptionalBracesMethodDeclList RBRACE;
+ClassExtendsError ::= (ClassExtendsErrorExists) error:e2 {: parser.report_error("Greska pri parsiranju: Neispravna deklaracija prosirenja natklase na liniji " + e2left + "!", null); :}
+					| (NoClassExtendsError) /* epsilon */
+					;
 OptionalExtendsType ::= (OptExtendsType) EXTENDS Type
 				  | (NoOptExtendsType) /* epsilon */
 				  ;
@@ -141,10 +140,7 @@ OptionalBracesMethodDeclList ::= (OptionalBracesMethodDeclarationList) LBRACE Me
 						 ;
 
 
-AbstractClassDecl ::= (AbstractClassDeclarat) ABSTRACT CLASS IDENT OptionalExtendsType LBRACE VarDeclList OptionalBracesMethodAbstractMethodDeclList RBRACE
-					/* | (AbstractClassDeclaratError) error:l OptionalExtendsType LBRACE VarDeclList OptionalBracesMethodAbstractMethodDeclList RBRACE
-						{: parser.report_error("Greska pri parsiranju: Neispravna deklaracija prosirenja natklase na liniji " + lleft + "!", null); :} */
-					;
+AbstractClassDecl ::= (AbstractClassDeclarat) ABSTRACT CLASS IDENT ClassExtendsError OptionalExtendsType LBRACE VarDeclList OptionalBracesMethodAbstractMethodDeclList RBRACE;
 OptionalBracesMethodAbstractMethodDeclList ::= (OptionalBracesMethodAbstractMethodDeclarationList) LBRACE MethodAbstractMethodDeclList RBRACE
 											 | (NoOptionalBracesMethodAbstractMethodDeclarationList) /* epsilon */
 											 ;
@@ -170,14 +166,16 @@ StatementList ::= (StmtList) StatementList Statement
 				   
 				   
 AbstractMethodDecl ::= (AbstractMethodDeclaration) ABSTRACT MethodReturnType IDENT LPAREN OptionalFormPars RPAREN SEMICOLON
-					 | (AbstractMethodDeclarationError) error SEMICOLON:l {: parser.report_error("Greska pri parsiranju: Neispravna deklaracija metode na liniji " + lleft + "!", null); :}
+					 | (AbstractMethodDeclarationError) error:e4 SEMICOLON {: parser.report_error("Greska pri parsiranju: Neispravna deklaracija metode na liniji " + e4left + "!", null); :}
+					 /* ovo bi trebalo da je dorbo */
 					 ;
 
 FormPars ::= (FormParams) FormPars COMMA FormParameter
 		   | (FormParam) FormParameter
 		   ;
 FormParameter ::= (FormalParameter) Type IDENT OptionalBrackets 
-		   		/* | (FormalParamaterError) error:l {: parser.report_error("Greska pri parsiranju: Neispravan formalni parametar na liniji " + lleft + "!", null); :} */
+		   		| (FormalParamaterError) error:e5 {: parser.report_error("Greska pri parsiranju: Neispravan formalni parametar na liniji " + e5left + "!", null); :}
+		   		/* ovo bi trebalo da je dorbo */
 		   		;
 
 
@@ -203,7 +201,8 @@ OptionalDesignatorStatement ::= (OptionalDesigStatement) DesignatorStatement
 							  ;
 OptionalCondition ::= (OptionalCond) Condition
 					| (NoOptionalCond) /* epsilon */
-					| (ConditionError) error:l {: parser.report_error("Greska pri parsiranju: Neispravan logicki izraz u for petlji na liniji " + lleft + "!", null); :}
+					| (ConditionError) error:e6 {: parser.report_error("Greska pri parsiranju: Neispravan logicki izraz u for petlji na liniji " + e6left + "!", null); :}
+					/* ovo bi trebalo da je dorbo */
 					;
 OptionalExpr ::= (OptionalExpression) Expr
 			   | (NoOptionalExpression) /* epsilon */
@@ -213,12 +212,13 @@ OptionalNumConst ::= (OptionalNumberConst) NUM_CONST
 				   ;
 
 
-DesignatorStatement ::= (DesignatorStatement) Designator DesignatorAction;
+DesignatorStatement ::= (DesignatorStatementNoError) Designator DesignatorAction
+					  | (DesignatorAssignopError) error:e7 {: parser.report_error("Greska pri parsiranju: Neispravan iskaz dodele na liniji " + e7left + "!", null); :}
+					  ;
 DesignatorAction ::= (DesignatorActionAssign) Assignop Expr
 				   | (DesignatorActionCallMethod) LPAREN OptionalActPars RPAREN
 				   | (DesignatorActionPlusPlus) PLUS_PLUS
 				   | (DesignatorActionMinusMinus) MINUS_MINUS
-				   | (DesignatorActionError) error:l {: parser.report_error("Greska pri parsiranju: Neispravan iskaz dodele na liniji " + lleft + "!", null); :}
 				   ;
 OptionalActPars ::= (OptionalActualParams) ActPars
 				  | (NoOptionalActualParams) /* epsilon */

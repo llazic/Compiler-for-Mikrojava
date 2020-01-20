@@ -1,0 +1,12 @@
+program MJProgram
+{
+	int main()
+	{
+		for(;;){}  	//ok
+		for(;a;){} 	//ok
+		for(;a++;){}
+		for(;=;){}
+		for(;;;;){}	//hvata kao neispravan iskaz dodele
+		for(;aaggg uu ahah aaiops=;){}
+	}
+}
